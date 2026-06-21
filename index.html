@@ -137,17 +137,20 @@ a{color:inherit;text-decoration:none;}
 
 /* 主頁固定「本品影音」浮動鈕（隨閱讀品自動切換） */
 .wy-vbtn{position:fixed;right:22px;bottom:78px;z-index:121;
-  display:none;align-items:center;gap:8px;max-width:260px;
-  font-family:"Noto Sans TC",sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;
+  display:none;align-items:center;gap:8px;
+  font-family:"Noto Sans TC",sans-serif;letter-spacing:1px;
   color:#1e1a14;background:linear-gradient(135deg,var(--goldL),var(--gold));
-  padding:10px 18px;border-radius:26px;text-decoration:none;cursor:pointer;
+  padding:8px 16px;border-radius:22px;text-decoration:none;cursor:pointer;
   box-shadow:0 4px 16px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.25);
-  transition:opacity .35s,transform .2s,box-shadow .2s;}
+  opacity:.94;transition:opacity .3s,transform .2s,box-shadow .2s;}
 .wy-vbtn.show{display:inline-flex;}
-.wy-vbtn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(184,134,11,.5);}
+.wy-vbtn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 20px rgba(184,134,11,.5);}
 .wy-vbtn .wy-vico{font-size:13px;line-height:1;}
-.wy-vbtn .wy-vtxt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-@media(max-width:900px){.wy-vbtn{right:14px;bottom:74px;font-size:13px;max-width:180px;padding:8px 14px;}}
+.wy-vbtn .wy-vlines{display:flex;flex-direction:column;align-items:flex-start;line-height:1.25;}
+.wy-vbtn .wy-vl1{font-size:11px;font-weight:500;opacity:.82;white-space:nowrap;}
+.wy-vbtn .wy-vl2{font-size:13.5px;font-weight:700;white-space:nowrap;}
+@media(max-width:900px){.wy-vbtn{right:14px;bottom:74px;padding:7px 13px;}
+  .wy-vbtn .wy-vl2{font-size:12.5px;}}
 
 /* ===== Chapters ===== */
 .chapter{margin:0 auto;padding:34px 0 0;max-width:1080px;}
@@ -495,7 +498,7 @@ a{color:inherit;text-decoration:none;}
 </div>
 </main>
 <a class="wy-vbtn" id="wyVideoBtn" rel="noopener" target="_blank" title="觀看本品影音講解">
-<span class="wy-vico">▶</span><span class="wy-vtxt" data-wytext="keWBgfL7jdTVnPPG"></span></a>
+<span class="wy-vico">▶</span><span class="wy-vlines"><span class="wy-vl1"></span><span class="wy-vl2"></span></span></a>
 <button aria-label="回到頂部" id="backTop">↑</button>
 <div class="read-progress" id="readProgress">
 <span class="rp-label" data-wytext="nu+cjM/6genWkNbT"></span>
@@ -560,12 +563,14 @@ else{window.addEventListener('scroll',function(){var dh=document.documentElement
 /* ===== 影音資料 ===== */
 var WY_VIDEOS=[{"url": "https://youtu.be/QUiwmmLPxJY", "cn": "一", "sb": "三三昧義"}, {"url": "https://youtu.be/3P-XkwZsYd8", "cn": "二", "sb": "三解脫門"}, {"url": "https://youtu.be/MGuHwaKekw4", "cn": "三", "sb": "三三昧品"}, {"url": "https://youtu.be/ztZsWD8leBI", "cn": "四", "sb": "般若真空"}, {"url": "https://youtu.be/-XdR3WPmeTQ", "cn": "五", "sb": "三昧四禪"}, {"url": "https://youtu.be/Wilu8PFHWoc", "cn": "六", "sb": "四無量義"}, {"url": "https://youtu.be/_No3y0I3Lp0", "cn": "七", "sb": "慈心義"}, {"url": "https://youtu.be/WW90zPXI4MA", "cn": "八", "sb": "慈悲喜捨"}, {"url": "https://youtu.be/ns5sU0zL5GI", "cn": "九", "sb": "空中度生"}, {"url": "https://youtu.be/HXhO1m4kHxQ", "cn": "十", "sb": "四無色定"}, {"url": "https://youtu.be/ZLpc802DJGo", "cn": "十一", "sb": "大乘無色"}];
 var wyVBtn=document.getElementById('wyVideoBtn');
-var wyVTxt=wyVBtn?wyVBtn.querySelector('.wy-vtxt'):null;
+var wyVL1=wyVBtn?wyVBtn.querySelector('.wy-vl1'):null;
+var wyVL2=wyVBtn?wyVBtn.querySelector('.wy-vl2'):null;
 function updateVideo(idx){
   if(!wyVBtn)return;
   if(idx>=0&&WY_VIDEOS[idx]){
     wyVBtn.href=WY_VIDEOS[idx].url;
-    if(wyVTxt)wyVTxt.textContent='第'+WY_VIDEOS[idx].cn+'品 · '+WY_VIDEOS[idx].sb+' 影音';
+    if(wyVL1)wyVL1.textContent='第'+WY_VIDEOS[idx].cn+'品';
+    if(wyVL2)wyVL2.textContent=WY_VIDEOS[idx].sb+' 影音';
     wyVBtn.classList.add('show');
   } else { wyVBtn.classList.remove('show'); }
 }
