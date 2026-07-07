@@ -1277,5 +1277,59 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-SDT2:END-->
+<!--WY-SDT3:BEGIN-->
+<style id="wy-sd3-css">
+.sd3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.sd3-fabbox.show{display:block;}
+.sd3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.sd3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.sd3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.sd3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.sd3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.sd3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.sd3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.sd3-modal.open{display:flex;}
+.sd3-card{position:relative;background:#fbf7ee;max-width:880px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.sd3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.sd3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.sd3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.sd3-close:hover{background:#e3d5b8;}
+.sd3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.sd3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.sd3-tbl th,.sd3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.sd3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.sd3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.sd3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.sd3-tbl b{color:#8b2500;}
+.sd3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.sd3-note b{color:#8b2500;}
+@media(max-width:900px){.sd3-fabbox{right:14px;}.sd3-tbl{font-size:11.5px;}.sd3-card{padding:26px 14px 16px;}}
+</style>
+<div class="sd3-fabbox" id="sd3Box"><button class="sd3-btn" id="sd3Btn" type="button" aria-label="開啟三三昧品全景總表"><span class="sd3-ic">▦</span><span class="sd3-ls"><span class="sd3-l1">本品 · 三三昧品</span><span class="sd3-l2">全景總表 · 定慧等持</span></span></button></div><div class="sd3-modal" id="sd3Modal" role="dialog" aria-modal="true" aria-label="三三昧品全景總表"><div class="sd3-card"><button class="sd3-close" id="sd3Close" type="button" aria-label="關閉">×</button><h3>三三昧品（第三品）· 全景總表</h3><p class="sub">卷二十・第三品｜為何慧名三昧・定慧等持・狂慧與退失・三門分工・四諦十六行相・三維總攝</p><table class="sd3-tbl"><caption>一、全品八章結構地圖 ── 為何三種智慧名為「三昧」</caption><thead><tr><th>章</th><th>提問</th><th>要點</th></tr></thead><tbody><tr><td>章1 · 核心診斷</td><td>空無相無作是「智慧」，何以名「三昧」（定）？</td><td>揭失衡兩病：<b>狂慧</b>與<b>退失</b>；逼出「定慧必須等持」</td></tr><tr><td>章2 · 原典</td><td>—</td><td>論主設問·自問自答的<b>五輪辯證</b></td></tr><tr><td>章3 · 定慧等持</td><td>真實行道人的結構？</td><td><b>定慧等持·止觀雙運</b>——慧劍須持定力穩，方名三昧真解脫</td></tr><tr><td>章4 · 命名邏輯</td><td>何以又名「解脫門」？</td><td>三昧／解脫門<b>二名</b>——同一法的兩種作用層面</td></tr><tr><td>章5 · 三門總覽</td><td>三門如何分工？</td><td><b>空破主體</b>(觀無我)·<b>無作破過程/因</b>(斷造作)·<b>無相破目標/果</b>(見涅槃)</td></tr><tr><td>章6 · 無作三昧深解</td><td>十行相是哪些？</td><td>空2行·無作10行·無相4行（四諦×三三昧＝十六行相）</td></tr><tr><td>章7 · 發生場域</td><td>於何地起？有漏無漏？</td><td>無漏＝九地中一分（作「解脫門」）·有漏＝繫十一地（作「三昧」）</td></tr><tr><td>章8 · 中觀總攝</td><td>如何總攝全品？</td><td><b>三維結構</b>：定為體(王)·慧為用(大臣)·十六行相為操作手冊(營從)</td></tr></tbody></table><table class="sd3-tbl"><caption>二、定慧失衡的兩種沉淪 vs 等持</caption><thead><tr><th>病理／正道</th><th>機制</th></tr></thead><tbody><tr><td>狂慧</td><td>散心觀空 → 成<b>狂慧</b>、墮邪見、無所為</td></tr><tr><td>退失（盲修定）</td><td>盲目修定、無三法 → 福盡依舊墮輪迴</td></tr><tr><td>退失（盲修慧）</td><td>盲目修慧、無三法 → 福盡依舊墮輪迴</td></tr><tr><td>定慧等持</td><td><b>離兩邊·止觀雙運契中道</b>；慧劍須持定力穩，方名三昧真解脫</td></tr></tbody></table><table class="sd3-tbl"><caption>三、三三昧 × 四諦十六行相 ── 三門分工</caption><thead><tr><th>三昧</th><th>行相</th><th>配屬 · 分工</th></tr></thead><tbody><tr><td>空三昧（2 行）</td><td>空 · 無我</td><td><b>苦諦·主體面</b>——破主體、觀無我</td></tr><tr><td>無作三昧（10 行）</td><td>無常·苦·集·因·緣·生·道·正·跡·到</td><td>苦2＋集4＋道4·<b>過程/因面</b>——斷造作</td></tr><tr><td>無相三昧（4 行）</td><td>盡·滅·妙·出</td><td><b>滅諦·目標/果面</b>——見涅槃</td></tr></tbody></table><p class="sd3-note"><b>核心診斷</b>：「空·無相·無作」明明是<b>慧</b>，何以名「<b>三昧</b>」（定）？因為<b>定慧必須等持</b>——散心觀空成狂慧、盲修定慧無三法則福盡墮輪迴，唯止觀雙運契中道方名真解脫。<br><b>二名一法</b>：作「通門」時純無漏，稱「<b>解脫門</b>」（九地一分）；作「心一境性的定體」時通有漏無漏，稱「<b>三昧</b>」（十一地）。二名對應二作用，不可混為一談。<br><b>三維總攝</b>：<b>定為體</b>（三昧·心一境性·王）、<b>慧為用</b>（空/無相/無作·大臣）、<b>十六行相為操作手冊</b>（四諦×三門＝2＋4＋10·營從）。承品一、品二，深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-sd3-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('sd3Btn'),BOX=document.getElementById('sd3Box'),MODAL=document.getElementById('sd3Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='sd3Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-SDT3:END-->
 </body>
 </html>
