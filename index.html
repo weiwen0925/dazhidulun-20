@@ -845,5 +845,59 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-EBTN:END-->
+<!--WY-SDT6:BEGIN-->
+<style id="wy-sd6-css">
+.sd6-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.sd6-fabbox.show{display:block;}
+.sd6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#5a5136,#2f3320);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.sd6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.sd6-ic{font-size:15px;line-height:1;color:#ecc978;}
+.sd6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.sd6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.sd6-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.sd6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.sd6-modal.open{display:flex;}
+.sd6-card{position:relative;background:#fbf7ee;max-width:820px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.sd6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.sd6-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.sd6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.sd6-close:hover{background:#e3d5b8;}
+.sd6-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.sd6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;}
+.sd6-tbl th,.sd6-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.sd6-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.sd6-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.sd6-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.sd6-tbl b{color:#8b2500;}
+.sd6-note{font-size:12px;color:#5a4e3a;line-height:1.85;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.sd6-note b{color:#8b2500;}
+@media(max-width:900px){.sd6-fabbox{right:14px;}.sd6-tbl{font-size:11.5px;}.sd6-card{padding:26px 14px 16px;}}
+</style>
+<div class="sd6-fabbox" id="sd6Box"><button class="sd6-btn" id="sd6Btn" type="button" aria-label="開啟四無量心阿毘達摩總表"><span class="sd6-ic">▦</span><span class="sd6-ls"><span class="sd6-l1">本品 · 四無量心</span><span class="sd6-l2">慈悲喜捨阿毘達摩總表</span></span></button></div><div class="sd6-modal" id="sd6Modal" role="dialog" aria-modal="true" aria-label="四無量心阿毘達摩總表"><div class="sd6-card"><button class="sd6-close" id="sd6Close" type="button" aria-label="關閉">×</button><h3>四無量心（慈悲喜捨）阿毘達摩總表</h3><p class="sub">卷二十・第六品｜四心定義・對治・微觀結構・七維屬性・有漏無漏・三種緣慈</p><table class="sd6-tbl"><caption>一、四心一覽 ── 定義・對治・主導意願（第二章）</caption><thead><tr><th>四心</th><th>定義（原典）</th><th>對治·除</th><th>主導意願（思的方向）</th></tr></thead><tbody><tr><td>慈 Cí · Love</td><td>愛念眾生，常求安隱樂事以饒益之（願與眾生樂）</td><td>瞋覺</td><td>令眾生得樂</td></tr><tr><td>悲 Bēi · Compassion</td><td>愍念眾生受五道中種種身苦、心苦（願拔眾生苦）</td><td>惱覺</td><td>愍念拔苦</td></tr><tr><td>喜 Xǐ · Joy</td><td>欲令眾生從樂得歡喜（見他得樂而隨喜）</td><td>不悅樂</td><td>令從樂歡喜</td></tr><tr><td>捨 Shě · Equanimity</td><td>捨三種心，但念眾生不憎不愛（平等無憎愛）</td><td>愛憎</td><td>不憎不愛、平等</td></tr></tbody></table><table class="sd6-tbl"><caption>二、「慈」的微觀結構 ＋ 阿毘曇七維屬性（第三～四章）</caption><thead><tr><th>維度</th><th>慈心判攝</th></tr></thead><tbody><tr><td>本體結構</td><td>受＋想＋行＋識＋業 的和合<b>假名</b>（心所法中生法）</td></tr><tr><td>得名之主</td><td>以「<b>思</b>（Volition）」為主導而得名（思最有力）；悲喜捨結構相同，差別只在「思」的方向</td></tr><tr><td>所依界</td><td>色界（離欲界粗動、未及無色）</td></tr><tr><td>漏性</td><td>或<b>有漏</b>（凡夫行境）、或<b>無漏</b>（聖者行境）</td></tr><tr><td>斷／不斷</td><td>或可斷（隨煩惱斷）、或不可斷（契實相者恆住）</td></tr><tr><td>所住定</td><td>根本禪 ＋ 禪中間（中間禪）</td></tr><tr><td>三根相應</td><td>樂根・喜根・捨根（<b>除</b>苦根、憂根——慈本性給樂，不取苦憂）</td></tr></tbody></table><table class="sd6-tbl"><caption>三、凡→聖：有漏／無漏 與 三種緣慈昇華階梯（第四～五章）</caption><thead><tr><th>三種緣慈</th><th>修者</th><th>所緣・認知</th><th>漏性・層次</th></tr></thead><tbody><tr><td>眾生緣慈</td><td>凡夫</td><td>見「眾生相」為實有，夾雜愛憎、隨境起伏</td><td>有漏（最內圈）</td></tr><tr><td>法緣慈</td><td>聲聞・緣覺</td><td>破眾生相、見五蘊（見法）</td><td>趣無漏（中圈）</td></tr><tr><td>無緣大慈</td><td>佛・菩薩</td><td>無所緣，入諸法實相，慈如陽光普照無所取</td><td>無漏（最外金輪）</td></tr></tbody></table><p class="sd6-note">＊核心判準：「<b>取眾生相故有漏；取相已，入諸法實相故無漏</b>」——「取相<b>已</b>」＝先取相（世俗諦立起慈悲的形式）、再入實相（第一義諦解除執著），非「冷眼無情」的空觀。中觀點：慈＝以「思」為主導對心所和合所立的<b>假名</b>，故能由眾生緣慈昇華到無緣大慈。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-sd6-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('sd6Btn'),BOX=document.getElementById('sd6Box'),MODAL=document.getElementById('sd6Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='sd6Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-SDT6:END-->
 </body>
 </html>
