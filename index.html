@@ -1061,5 +1061,59 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-SDT9:END-->
+<!--WY-SDT10:BEGIN-->
+<style id="wy-sd10-css">
+.sd10-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.sd10-fabbox.show{display:block;}
+.sd10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.sd10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.sd10-ic{font-size:15px;line-height:1;color:#ecc978;}
+.sd10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.sd10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.sd10-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.sd10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.sd10-modal.open{display:flex;}
+.sd10-card{position:relative;background:#fbf7ee;max-width:880px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.sd10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.sd10-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.sd10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.sd10-close:hover{background:#e3d5b8;}
+.sd10-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.sd10-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.sd10-tbl th,.sd10-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.sd10-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.sd10-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.sd10-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.sd10-tbl b{color:#8b2500;}
+.sd10-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.sd10-note b{color:#8b2500;}
+@media(max-width:900px){.sd10-fabbox{right:14px;}.sd10-tbl{font-size:11.5px;}.sd10-card{padding:26px 14px 16px;}}
+</style>
+<div class="sd10-fabbox" id="sd10Box"><button class="sd10-btn" id="sd10Btn" type="button" aria-label="開啟四無色定全景總表"><span class="sd10-ic">▦</span><span class="sd10-ls"><span class="sd10-l1">本品 · 四無色定</span><span class="sd10-l2">全景總表 · 九章掃描</span></span></button></div><div class="sd10-modal" id="sd10Modal" role="dialog" aria-modal="true" aria-label="四無色定全景總表"><div class="sd10-card"><button class="sd10-close" id="sd10Close" type="button" aria-label="關閉">×</button><h3>四無色定（第十品）· 全景總表</h3><p class="sub">卷二十・第十品｜四境階梯・行得之道・滅三相入虛空・阿毘達磨系統掃描・慧證中道</p><table class="sd10-tbl"><caption>一、全品九章結構地圖 ── 行得修證 → 阿毘達磨掃描 → 慧證中道</caption><thead><tr><th>章</th><th>提問</th><th>要點</th></tr></thead><tbody><tr><td>章1 · 綱目原典</td><td>四境·三種四無色</td><td>四境階梯（虛空/識/無所有/非非想）· 三種：有垢（染·三十一結）/生得（業報）/<b>行得（觀行修習）</b>——唯行得可修可證</td></tr><tr><td>章2 · 行得之道</td><td>什麼驅動層層捨離？</td><td>色身實相：麁惡重苦·如重病癰瘡毒刺·<b>虛誑</b> → 應當除却；<b>捨小利得大利</b>（層層捨而後得）</td></tr><tr><td>章3 · 緣起性空</td><td>色為何可滅？</td><td>因緣和合<b>無自性</b>故虛誑 · 分分破散（後無今亦無）· 破一相異相 → <b>易可得滅</b>（非力大能摧，是本非實有）</td></tr><tr><td>章4 · 滅三相次第</td><td>如何入虛空處？</td><td><b>過色相 → 滅有對相 → 不念異相</b>（對應佛說三種色：可見有對/不可見有對/不可見無對）→ 入無邊虛空處</td></tr><tr><td>章5 · 系統掃描</td><td>四無色的法相定位？</td><td><b>漏無漏</b>（一常有漏·三當分別）· 善/無記 · 報/無報 · 心/心所——阿毘達磨四維度</td></tr><tr><td>章6 · 心識微觀</td><td>無色身，靠什麼運作？</td><td>心（心意識）/心所（受想行·相應因）/<b>心不相應行</b>（命根·得，非心非色）· 四句分別</td></tr><tr><td>章7 · 斷結機制</td><td>煩惱結如何斷？</td><td><b>見諦斷</b>（二十八使·頓）/<b>思惟斷</b>（三使·漸）/不斷（無漏）· 非非想特例（心細無道·依無漏智）· 身見遞迴</td></tr><tr><td>章8 · 四緣分析</td><td>有為法生起條件？</td><td>因緣（一切有亦與）· 次第緣（<b>阿羅漢最後滅不與</b>）· 緣緣 · 增上緣 · 總覽表</td></tr><tr><td>章9 · 中道統攝</td><td>無色定是終點嗎？</td><td>仍是<b>有為法</b>（依緣生·有生滅·非究竟涅槃）· 解構物質∩分析心識→中道 · <b>非由定得，而由慧證</b></td></tr></tbody></table><table class="sd10-tbl"><caption>二、修證主軸 ── 四境階梯・三門・滅三相入虛空</caption><thead><tr><th>主題</th><th>內容</th></tr></thead><tbody><tr><td>四境階梯</td><td>①虛空處（緣無邊虛空）→ ②識處（緣無邊心識）→ ③無所有處（緣一無所有）→ ④非有想非無想處（想極微細·似有似無）——由色界逐層超越</td></tr><tr><td>三種四無色</td><td><b>有垢</b>（煩惱染·攝三十一結）· <b>生得</b>（業報受生無色界）· <b>行得</b>（觀行修習而證入）——唯行得是解脫道下手處</td></tr><tr><td>滅三相入虛空</td><td>過色相（破可見有對·眼見色壞）→ 滅有對相（破不可見有對·耳鼻舌身壞）→ 不念異相（破不可見無對）</td></tr><tr><td>超越的動力</td><td>色身如重病·癰瘡·毒刺·虛誑 → <b>應當除却</b>；捨財色得持戒、離欲得初禪…層層「捨小利得大利」</td></tr></tbody></table><table class="sd10-tbl"><caption>三、阿毘達磨系統掃描 ── 四無色定的法相定位</caption><thead><tr><th>維度</th><th>判別</th></tr></thead><tbody><tr><td>漏 / 無漏</td><td><b>一常有漏</b>（非非想）· <b>三當分別</b>（前三定或有漏或無漏）</td></tr><tr><td>善 / 無記</td><td>無色界中無不善法；行得屬善、生得屬無記</td></tr><tr><td>業報</td><td>善有漏是有報（招感受生無色界）；無漏無報</td></tr><tr><td>心不相應行</td><td>命根·得等（非心非色）維繫無色界生命；心·心所＝相應因</td></tr><tr><td>斷結</td><td>見諦斷（二十八使）/思惟斷（三使）/不斷（無漏）；非非想須<b>無漏智</b>斷</td></tr><tr><td>四緣</td><td>因緣（一切有亦與）· 次第緣（阿羅漢最後滅<b>不與</b>）· 緣緣 · 增上緣</td></tr></tbody></table><p class="sd10-note"><b>中道統攝</b>：龍樹提供兩套互補觀法——前半以中觀「<b>緣起性空</b>」解構物質（破色障），後半以阿毘達磨<b>法相分別</b>分析心識（破心執）；二者如雙翼相依，交會處即不落有無的<b>中道</b>。<br><b>最後的提醒</b>：四無色定再微細寂靜，仍是<b>有為法</b>（依緣生·有生滅·非究竟涅槃）；把某層深定誤認終點，是修行者最隱微的陷阱。<br><b>結語</b>：<b>解脫非由定得，而由慧證</b>。與品五（四禪阿毘達磨）同一體例，本卷禪定分析至此圓備。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-sd10-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('sd10Btn'),BOX=document.getElementById('sd10Box'),MODAL=document.getElementById('sd10Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='sd10Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-SDT10:END-->
 </body>
 </html>
