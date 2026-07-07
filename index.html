@@ -1115,5 +1115,59 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-SDT10:END-->
+<!--WY-SDT11:BEGIN-->
+<style id="wy-sd11-css">
+.sd11-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.sd11-fabbox.show{display:block;}
+.sd11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.sd11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.sd11-ic{font-size:15px;line-height:1;color:#ecc978;}
+.sd11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.sd11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.sd11-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.sd11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.sd11-modal.open{display:flex;}
+.sd11-card{position:relative;background:#fbf7ee;max-width:880px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.sd11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.sd11-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.sd11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.sd11-close:hover{background:#e3d5b8;}
+.sd11-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.sd11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.sd11-tbl th,.sd11-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.sd11-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.sd11-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.sd11-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.sd11-tbl b{color:#8b2500;}
+.sd11-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.sd11-note b{color:#8b2500;}
+@media(max-width:900px){.sd11-fabbox{right:14px;}.sd11-tbl{font-size:11.5px;}.sd11-card{padding:26px 14px 16px;}}
+</style>
+<div class="sd11-fabbox" id="sd11Box"><button class="sd11-btn" id="sd11Btn" type="button" aria-label="開啟大乘四無色定全景總表"><span class="sd11-ic">▦</span><span class="sd11-ls"><span class="sd11-l1">本品 · 大乘四無色定</span><span class="sd11-l2">全景總表 · 色心雙遣</span></span></button></div><div class="sd11-modal" id="sd11Modal" role="dialog" aria-modal="true" aria-label="大乘四無色定全景總表"><div class="sd11-card"><button class="sd11-close" id="sd11Close" type="button" aria-label="關閉">×</button><h3>大乘四無色定（第十一品）· 全景總表</h3><p class="sub">卷二十・第十一品｜定位翻轉・定慧等持・雙重解構刀法（空間破色/時間破心）・色心雙遣</p><table class="sd11-tbl"><caption>一、全品六章結構地圖 ── 定位翻轉 → 五輪問答 → 雙重解構 → 色心雙遣</caption><thead><tr><th>章</th><th>提問</th><th>要點</th></tr></thead><tbody><tr><td>章1 · 定位翻轉</td><td>大乘四無色與凡夫小乘有何不同？</td><td>焦點從「定境長什麼樣」→「在定中<b>看見什麼</b>」；重點不在定深，而在<b>慧是否直擊實相</b></td></tr><tr><td>章2 · 五輪問答</td><td>摩訶衍中四無色云何？</td><td>①與諸法實相共智慧行 ②實相＝自性空 ③挑戰:無色如何空 ④舉粗明細＋雙重解構 ⑤色空間·心時間</td></tr><tr><td>章3 · 唯物解構的盲點</td><td>無色無形，憑什麼空？</td><td>挑戰者把「空」綁死在「拆形體」→ 放下物質卻抓<b>精神實體/清淨心</b>（靈性傲慢）；龍樹「<b>舉粗明細</b>」反擊</td></tr><tr><td>章4 · 空間維度解構</td><td>有形色法如何空？</td><td>色屬<b>空間</b>：物體→分子→原子→夸克→微塵 → <b>散滅歸空</b></td></tr><tr><td>章5 · 時間維度解構</td><td>無形心法如何空？</td><td>心屬<b>時間</b>：膠卷譬喻；年月→日→須臾→<b>一念剎那</b>（前念已滅·後念未生·當下不住）→ 不可得</td></tr><tr><td>章6 · 色心雙遣統攝</td><td>如何收攝全品？</td><td><b>色心雙遣</b>（無真實避風港）· 接《中論》緣起性空 · 不墮枯木禪 · 照見心念皆空</td></tr></tbody></table><table class="sd11-tbl"><caption>二、雙重解構刀法 ── 色心分維、殊途同歸（本品核心）</caption><thead><tr><th>對象</th><th>特性</th><th>下刀維度</th><th>結果</th></tr></thead><tbody><tr><td>色法 Matter</td><td>有對 · 可見</td><td>空間 Space</td><td>拆至微塵 → <b>散滅歸空</b></td></tr><tr><td>心法 Mind</td><td>無對 · 不可見</td><td>時間 Time</td><td>拆至一念剎那 → <b>了不可得</b></td></tr><tr><td>殊途同歸</td><td>有形/無形</td><td>兩刀分進合擊</td><td>任何法不外佔空間(色)或相續於時間(心)，皆歸<b>自性空</b></td></tr></tbody></table><table class="sd11-tbl"><caption>三、定位翻轉 · 修行心要</caption><thead><tr><th>面向</th><th>內容</th><th>要義</th></tr></thead><tbody><tr><td>凡夫/小乘純定</td><td>定境階梯（愈深愈靜）；看見「無限的空」</td><td>缺慧 → 落有為法／<b>枯木禪</b>（枯坐死寂）</td></tr><tr><td>大乘定慧等持</td><td>「<b>與諸法實相共智慧行</b>」；止(śamatha)∩觀(prajñā)</td><td>定為舞台、般若照見「空無自性的實相」</td></tr><tr><td>靈性傲慢（最隱微陷阱）</td><td>放下物質，卻死抓「清淨心/真常識/最高精神境界」為最後真實</td><td>執靈性為實，與執物質為實同是我執，更難察覺</td></tr><tr><td>究竟</td><td><b>沒有永恆的精神避風港</b></td><td>連非想非非想也剎那不住·了不可得 → 色心一併放下</td></tr></tbody></table><p class="sd11-note"><b>一次《中論》「緣起性空」的微觀演示</b>：以「<b>自性空</b>」定義大乘無色定，用<b>空間刀</b>破色（微塵散滅）、<b>時間刀</b>破心（一念不可得），色心雙遣、無一法留作避風港。<br><b>兩條修行心法</b>：① <b>不墮枯木禪</b>——定慧等持，非枯坐死寂；② <b>照見心念皆空</b>——念起如膠卷格格生滅，前念已滅、後念未生，不住即空。<br><b>全卷收束</b>：承品十（阿毘達磨四無色定），本品把四無色一舉拉升至大乘「實相直擊」——卷二十禪定義理至此圓滿。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-sd11-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('sd11Btn'),BOX=document.getElementById('sd11Box'),MODAL=document.getElementById('sd11Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='sd11Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-SDT11:END-->
 </body>
 </html>
