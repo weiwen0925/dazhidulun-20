@@ -899,5 +899,59 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-SDT6:END-->
+<!--WY-SDT7:BEGIN-->
+<style id="wy-sd7-css">
+.sd7-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.sd7-fabbox.show{display:block;}
+.sd7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#5b4636,#33261f);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.sd7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.sd7-ic{font-size:15px;line-height:1;color:#ecc978;}
+.sd7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.sd7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.sd7-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.sd7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.sd7-modal.open{display:flex;}
+.sd7-card{position:relative;background:#fbf7ee;max-width:840px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.sd7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.sd7-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.sd7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.sd7-close:hover{background:#e3d5b8;}
+.sd7-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.sd7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;}
+.sd7-tbl th,.sd7-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.sd7-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.sd7-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.sd7-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.sd7-tbl b{color:#8b2500;}
+.sd7-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.sd7-note b{color:#8b2500;}
+@media(max-width:900px){.sd7-fabbox{right:14px;}.sd7-tbl{font-size:11.5px;}.sd7-card{padding:26px 14px 16px;}}
+</style>
+<div class="sd7-fabbox" id="sd7Box"><button class="sd7-btn" id="sd7Btn" type="button" aria-label="開啟慈心義全景總表"><span class="sd7-ic">▦</span><span class="sd7-ls"><span class="sd7-l1">本品 · 慈心義</span><span class="sd7-l2">慈心義全景總表</span></span></button></div><div class="sd7-modal" id="sd7Modal" role="dialog" aria-modal="true" aria-label="慈心義全景總表"><div class="sd7-card"><button class="sd7-close" id="sd7Close" type="button" aria-label="關閉">×</button><h3>慈心義 · 全景總表</h3><p class="sub">卷二十・第七品｜四重毒素・五維矩陣・三種緣慈・中觀三鑰・悲智雙運</p><table class="sd7-tbl"><caption>一、瞋・恨・怨・惱 ── 四重定義與毒素三階演化（第二章）</caption><thead><tr><th>名相</th><th>定義（原典）</th><th>演化階段</th></tr></thead><tbody><tr><td>瞋</td><td>當下生起、欲加害的惡心（有／無因緣而瞋，欲惡口罵詈、殺害、劫奪）</td><td>① 初起</td></tr><tr><td>恨</td><td>伺機待時的潛伏惡意（待時節、得處所、有勢力當加害；初嫌為恨）</td><td>② 潛伏籌量</td></tr><tr><td>怨</td><td>恨久積成的深結（恨久成怨）</td><td>② 潛伏籌量</td></tr><tr><td>惱</td><td>落實為身口的實際加害（心已定、無所畏忌）</td><td>③ 決定加害</td></tr></tbody></table><table class="sd7-tbl"><caption>二、廣・大・無量 五維矩陣 ── 意識擴張演算法（第三章·核心）</caption><thead><tr><th>維度</th><th>廣</th><th>大</th><th>無量</th></tr></thead><tbody><tr><td>① 空間覆蓋</td><td>一方</td><td>四維</td><td>十方</td></tr><tr><td>② 對治硬度</td><td>瞋恨</td><td>怨</td><td>惱</td></tr><tr><td>③ 動機層次</td><td>畏罪</td><td>求福</td><td>涅槃</td></tr><tr><td>④ 所緣對象</td><td>親人／下賤</td><td>中人／尊貴</td><td>怨憎／聖人</td></tr><tr><td>⑤ 戒定慧支撐</td><td>持戒</td><td>禪定</td><td>智慧</td></tr></tbody></table><table class="sd7-tbl"><caption>三、三種緣慈（三鏡頭）── 由人到法到實相（第五章）</caption><thead><tr><th>三種慈</th><th>所緣・視角</th><th>二諦</th></tr></thead><tbody><tr><td>眾生緣慈</td><td>見「眾生」（凡夫視角）</td><td>世俗諦</td></tr><tr><td>法緣慈</td><td>見「法」（五蘊；聲聞緣覺）</td><td>世俗諦</td></tr><tr><td>無緣大慈</td><td>無所緣、契諸法實相（佛菩薩）</td><td>勝義諦</td></tr></tbody></table><table class="sd7-tbl"><caption>四、中觀三鑰 ── 記憶掛鉤（第六章）</caption><thead><tr><th>三鑰</th><th>作用</th></tr></thead><tbody><tr><td>鑰一 · 無自性</td><td>解釋「<b>淨化</b>」——恨意無自性，故可被慈心移除</td></tr><tr><td>鑰二 · 緣起假名</td><td>解釋「<b>擴張</b>」——廣、大、無量皆因緣所造，故心量可無限開展</td></tr><tr><td>鑰三 · 二諦</td><td>調和「世俗的慈」與「勝義的空」：法緣屬世俗諦，無緣契勝義諦</td></tr></tbody></table><p class="sd7-note"><b>核心原理（淨水珠譬喻）</b>：慈心如淨水珠投入憒濁之水，令瞋恨自淨；瞋是苦因緣、慈是樂因緣，故以慈「除、捨、離」瞋恨怨惱。<br><b>善修品管（第四章）</b>：慈心須牢固，且對「愛・中・憎」三類眾生<b>正等無異</b>——尤能慈念<b>怨敵</b>（把心量練到「無量」的重力訓練），終至「遍滿十方」。<br><b>攝頌</b>：慈如淨珠解毒水，破除瞋恨怨與惱；親中怨敵漸擴張，廣大無量因緣造；善修平等視父母，持戒定慧三級跳；眾生法緣皆世俗，無緣大慈實相寶。<br><b>結論 · 悲智雙運</b>：無緣大慈＝慈悲（悲）與實相智慧（空）的完美同步——四無量心由「修法」直通「佛道」。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-sd7-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('sd7Btn'),BOX=document.getElementById('sd7Box'),MODAL=document.getElementById('sd7Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='sd7Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-SDT7:END-->
 </body>
 </html>
