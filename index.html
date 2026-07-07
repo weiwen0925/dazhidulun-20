@@ -953,5 +953,59 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-SDT7:END-->
+<!--WY-SDT8:BEGIN-->
+<style id="wy-sd8-css">
+.sd8-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.sd8-fabbox.show{display:block;}
+.sd8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.sd8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.sd8-ic{font-size:15px;line-height:1;color:#ecc978;}
+.sd8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.sd8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.sd8-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.sd8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.sd8-modal.open{display:flex;}
+.sd8-card{position:relative;background:#fbf7ee;max-width:860px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.sd8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.sd8-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.sd8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.sd8-close:hover{background:#e3d5b8;}
+.sd8-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.sd8-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;}
+.sd8-tbl th,.sd8-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.sd8-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.sd8-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.sd8-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.sd8-tbl b{color:#8b2500;}
+.sd8-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.sd8-note b{color:#8b2500;}
+@media(max-width:900px){.sd8-fabbox{right:14px;}.sd8-tbl{font-size:11.5px;}.sd8-card{padding:26px 14px 16px;}}
+</style>
+<div class="sd8-fabbox" id="sd8Box"><button class="sd8-btn" id="sd8Btn" type="button" aria-label="開啟慈悲喜捨全景總表"><span class="sd8-ic">▦</span><span class="sd8-ls"><span class="sd8-l1">本品 · 慈悲喜捨</span><span class="sd8-l2">全景總表 · 七辯證結</span></span></button></div><div class="sd8-modal" id="sd8Modal" role="dialog" aria-modal="true" aria-label="慈悲喜捨全景總表"><div class="sd8-card"><button class="sd8-close" id="sd8Close" type="button" aria-label="關閉">×</button><h3>慈悲喜捨（四無量義）· 全景總表</h3><p class="sub">卷二十・第八品｜七個中觀辯證結・四譬喻・樂喜八重判準・六層金字塔・無住之道</p><table class="sd8-tbl"><caption>一、七個中觀辯證結 ── 全品結構地圖（前七結各成一章）</caption><thead><tr><th>辯證結</th><th>矛盾提問</th><th>中觀解</th><th>章</th></tr></thead><tbody><tr><td>① 現實 vs 觀想</td><td>眾生有苦有樂，云何觀「皆受樂」？</td><td><b>勝解作意</b>——以願力覆寫感知（非描述事實；鑽木取火漸擴）</td><td>章2</td></tr><tr><td>② 慈喜語義</td><td>樂與喜有何異？何以不合併？</td><td>身樂名樂、心樂名喜（八重判準；定力深淺階梯）</td><td>章3</td></tr><tr><td>③ 悲心插入</td><td>慈、悲、喜，何以「悲」在其中？</td><td>悲＝連接願望與結果的橋樑（如子得病）</td><td>章4</td></tr><tr><td>④ 捨心歸零</td><td>深愛眾生，何以又行「捨」？</td><td>除貪憂、情緒防火牆、系統歸零</td><td>章5</td></tr><tr><td>⑤ 想像 vs 實踐</td><td>四無量唯是憶想，未有實事？</td><td>憶想立起形式、<b>借假修真</b></td><td>章6</td></tr><tr><td>⑥ 救度 vs 無限</td><td>若一佛盡度，豈非無未來佛？</td><td>眾生無盡，佛亦無盡（永恆接力）</td><td>章7</td></tr><tr><td>⑦ 自利 vs 利他</td><td>眾生不可得，云何盡度一切？</td><td>釜底抽薪·眾生不可得，自利利他迴環</td><td>章8</td></tr></tbody></table><table class="sd8-tbl"><caption>二、四無量心 ── 四譬喻與功能定位（第九章）</caption><thead><tr><th>四心</th><th>譬喻</th><th>功能</th></tr></thead><tbody><tr><td>慈 Maitrī</td><td>鑽火之喻</td><td>願 · 給樂</td></tr><tr><td>悲 Karuṇā</td><td>父母病子</td><td>現實校驗 · 拔苦</td></tr><tr><td>喜 Muditā</td><td>藥發遍身</td><td>共振 · 隨喜</td></tr><tr><td>捨 Upekṣā</td><td>斷除貪憂</td><td>防護 · 平等歸零</td></tr></tbody></table><table class="sd8-tbl"><caption>三、樂 vs 喜 ── 八重判準「身樂名樂，心樂名喜」（第三章）</caption><thead><tr><th>判準</th><th>樂（慈）</th><th>喜（muditā）</th></tr></thead><tbody><tr><td>身／心</td><td>身樂 · 物理</td><td>心樂 · 心理</td></tr><tr><td>識</td><td>五識相應 · 感官</td><td>意識相應 · 內在</td></tr><tr><td>塵</td><td>五塵中生</td><td>法塵中生</td></tr><tr><td>定地</td><td>欲界五識／初禪三識／三禪一切</td><td>欲界初禪意識／二禪一切</td></tr><tr><td>粗細</td><td>麁（粗）樂</td><td>細樂</td></tr><tr><td>因果</td><td>因時 · 給予條件</td><td>果時 · 共振迴響</td></tr></tbody></table><p class="sd8-note"><b>總模型</b>：當有限的心智要發起無限（無量）的願力，必遇邏輯矛盾；本品以七個辯證，逐結解開「凡夫情感 → 菩薩智慧」的機制。<br><b>六層金字塔（菩薩心智架構）</b>：四無量心（慈=願／悲=現實校驗／喜=共振／捨=防護）＝<b>地基</b> → 上疊<b>六度</b>（實事行動）→ 頂為<b>空性</b>（究竟智慧）。<br><b>結論 · 無住之道（第十章）</b>：<b>智不住三界，悲不入涅槃</b>——悲與智如天平兩端，完美張力即「悲智雙運」。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-sd8-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('sd8Btn'),BOX=document.getElementById('sd8Box'),MODAL=document.getElementById('sd8Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='sd8Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-SDT8:END-->
 </body>
 </html>
