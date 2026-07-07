@@ -763,13 +763,12 @@ document.getElementById('sbToggle').addEventListener('click',function(){
 })();
 </script>
 <!--WY-EBTN:BEGIN-->
-<div class="wy-ebox"><a class="wy-eb" data-anchor="chapter-2-3-1" href="https://weiwen0925.github.io/medium-import-35.html" rel="noopener" target="_blank" title="延伸導讀 · 第 35 篇：拆光了零件，還有「車子」嗎？——用車、樂高、球隊，把龍樹最燒腦的「整體與部分」講到你會心一笑"><span class="wy-eb-ic"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6C10.4 5.3 8.1 4.8 4.4 4.8v12.6c3.7 0 6 .5 7.6 1.8 1.6-1.3 3.9-1.8 7.6-1.8V4.8C15.9 4.8 13.6 5.3 12 6.6z"/><path d="M12 6.6V19.2"/></svg></span><span class="wy-eb-ls"><span class="wy-eb-l1">延伸導讀 · 第 35 篇</span><span class="wy-eb-l2">拆光了零件，還有「車子」嗎？——用車、樂高、球隊，把龍樹最燒腦的「整體與部分」講到你會心一笑</span></span></a><a class="wy-eb" data-anchor="chapter-3-5-1" href="https://weiwen0925.github.io/medium-import-36.html" rel="noopener" target="_blank" title="延伸導讀 · 第 36 篇：十六觀行記不住？別背——把它收成三個問題：三解脫門，一把隨身的「破執羅盤」"><span class="wy-eb-ic"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6C10.4 5.3 8.1 4.8 4.4 4.8v12.6c3.7 0 6 .5 7.6 1.8 1.6-1.3 3.9-1.8 7.6-1.8V4.8C15.9 4.8 13.6 5.3 12 6.6z"/><path d="M12 6.6V19.2"/></svg></span><span class="wy-eb-ls"><span class="wy-eb-l1">延伸導讀 · 第 36 篇</span><span class="wy-eb-l2">十六觀行記不住？別背——把它收成三個問題：三解脫門，一把隨身的「破執羅盤」</span></span></a></div>
+<div class="wy-ebox"><a class="wy-eb" data-pidx="1" href="https://weiwen0925.github.io/medium-import-35.html" rel="noopener" target="_blank" title="延伸導讀 · 第 35 篇：拆光了零件，還有「車子」嗎？——用車、樂高、球隊，把龍樹最燒腦的「整體與部分」講到你會心一笑"><span class="wy-eb-ic"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6C10.4 5.3 8.1 4.8 4.4 4.8v12.6c3.7 0 6 .5 7.6 1.8 1.6-1.3 3.9-1.8 7.6-1.8V4.8C15.9 4.8 13.6 5.3 12 6.6z"/><path d="M12 6.6V19.2"/></svg></span><span class="wy-eb-ls"><span class="wy-eb-l1">延伸導讀 · 第 35 篇</span><span class="wy-eb-l2">拆光了零件，還有「車子」嗎？——用車、樂高、球隊，把龍樹最燒腦的「整體與部分」講到你會心一笑</span></span></a><a class="wy-eb" data-pidx="2" href="https://weiwen0925.github.io/medium-import-36.html" rel="noopener" target="_blank" title="延伸導讀 · 第 36 篇：十六觀行記不住？別背——把它收成三個問題：三解脫門，一把隨身的「破執羅盤」"><span class="wy-eb-ic"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6C10.4 5.3 8.1 4.8 4.4 4.8v12.6c3.7 0 6 .5 7.6 1.8 1.6-1.3 3.9-1.8 7.6-1.8V4.8C15.9 4.8 13.6 5.3 12 6.6z"/><path d="M12 6.6V19.2"/></svg></span><span class="wy-eb-ls"><span class="wy-eb-l1">延伸導讀 · 第 36 篇</span><span class="wy-eb-l2">十六觀行記不住？別背——把它收成三個問題：三解脫門，一把隨身的「破執羅盤」</span></span></a></div>
 <script id="wy-eb-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
 var BT=[].slice.call(document.querySelectorAll('.wy-eb'));
 var BOX=document.querySelector('.wy-ebox');
-if(!BT.length||!BOX)return;
-var FR=[].slice.call(document.querySelectorAll('iframe.ch-frame'));
-if(!FR.length)return;
+if(!CH.length||!BT.length||!BOX)return;
 var FSEL='#wyVideoBtn,#wyFab,#vid-floating,.wy-vbtn,.wy-video-fab',_fab,_ft=false;
 function fab(){
   if(_fab&&_fab.isConnected)return _fab;
@@ -778,40 +777,13 @@ function fab(){
   if(!_fab){var a=document.querySelectorAll('a,button');for(var i=0;i<a.length;i++){try{if(getComputedStyle(a[i]).position==='fixed'&&/本品影音/.test(a[i].textContent||'')){_fab=a[i];break;}}catch(e){}}}
   return _fab;
 }
-function keyOf(el){return /^chapter-\d+-\d+-\d+$/.test(el.id)?el.id:(el.getAttribute('data-anchor')||'');}
-function markers(doc){var a=[].slice.call(doc.querySelectorAll('[id]')).filter(function(e){return /^chapter-\d+-\d+-\d+$/.test(e.id);});if(a.length)return a;return [].slice.call(doc.querySelectorAll('[data-anchor]'));}
-function resolve(b){
-  if(b._r&&b._r.s&&b._r.s.isConnected)return b._r;
-  b._r=null;var anc=b.getAttribute('data-anchor'),pre=anc.replace(/-\d+$/,'-');
-  for(var i=0;i<FR.length;i++){
-    var f=FR[i],doc;try{doc=f.contentDocument||f.contentWindow.document;}catch(e){continue;}
-    if(!doc)continue;
-    var el=doc.getElementById(anc)||doc.querySelector('[data-anchor="'+anc+'"]');
-    if(!el)continue;
-    var mk=markers(doc),grp=[];
-    for(var k=0;k<mk.length;k++){if(keyOf(mk[k]).indexOf(pre)===0)grp.push(mk[k]);}
-    var sEl=grp.length?grp[0]:el,lEl=grp.length?grp[grp.length-1]:el;
-    var li=mk.indexOf(lEl),nEl=(li>=0?mk[li+1]:null)||null;
-    b._r={f:f,s:sEl,n:nEl};return b._r;
-  }
-  return null;
-}
-function top(f,el){return window.scrollY+f.getBoundingClientRect().top+el.getBoundingClientRect().top;}
 function place(){var bpx=78,f=fab();if(f){var r=f.getBoundingClientRect(),st=getComputedStyle(f);if(r.height>0&&st.display!=='none'&&st.visibility!=='hidden'){bpx=Math.round(window.innerHeight-r.top)+10;}}BOX.style.bottom=bpx+'px';}
-function upd(){
-  place();
-  var y=window.scrollY+window.innerHeight*0.30;
-  for(var i=0;i<BT.length;i++){
-    var b=BT[i],r=resolve(b);
-    if(!r){b.classList.remove('show');continue;}
-    var s=top(r.f,r.s),e=(r.n&&r.n.isConnected)?top(r.f,r.n):(window.scrollY+r.f.getBoundingClientRect().bottom);
-    b.classList.toggle('show',y>=s&&y<e);
-  }
-}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();var idx=curIdx();for(var i=0;i<BT.length;i++){BT[i].classList.toggle('show',+BT[i].getAttribute('data-pidx')===idx);}}
 var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
 window.addEventListener('scroll',onS,{passive:true});
 window.addEventListener('resize',onS);
-var c=0,iv=setInterval(function(){upd();if(++c>100)clearInterval(iv);},300);
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-EBTN:END-->
