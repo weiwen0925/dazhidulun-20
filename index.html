@@ -152,22 +152,6 @@ a{color:inherit;text-decoration:none;}
 @media(max-width:900px){.wy-vbtn{right:14px;bottom:74px;padding:7px 13px;}
   .wy-vbtn .wy-vl2{font-size:12.5px;}}
 
-/* 品3 三三昧品：延伸導讀浮動鈕（連第36篇，僅品3顯示，疊於影音鈕上方）WY-ESSAY36-BTN */
-.wy-ebtn{position:fixed;right:22px;bottom:138px;z-index:121;
-  display:none;align-items:center;gap:9px;
-  font-family:"Noto Sans TC",sans-serif;letter-spacing:1px;
-  color:#f7ecd2;background:linear-gradient(135deg,#5b4a34,#392d1e);
-  padding:8px 16px;border-radius:22px;text-decoration:none;cursor:pointer;
-  box-shadow:0 4px 16px rgba(0,0,0,.30);border:1px solid rgba(184,134,11,.55);
-  opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
-.wy-ebtn.show{display:inline-flex;}
-.wy-ebtn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
-.wy-ebtn .wy-eico{display:flex;align-items:center;color:#ecc978;}
-.wy-ebtn .wy-elines{display:flex;flex-direction:column;align-items:flex-start;line-height:1.25;}
-.wy-ebtn .wy-el1{font-size:11px;font-weight:500;opacity:.82;white-space:nowrap;}
-.wy-ebtn .wy-el2{font-size:13.5px;font-weight:700;white-space:nowrap;color:#faf1d8;}
-@media(max-width:900px){.wy-ebtn{right:14px;bottom:128px;padding:7px 13px;}
-  .wy-ebtn .wy-el2{font-size:12.5px;}}
 
 /* ===== Chapters ===== */
 .chapter{margin:0 auto;padding:34px 0 0;max-width:1080px;}
@@ -370,6 +354,17 @@ a{color:inherit;text-decoration:none;}
   });
 })();
 </script>
+<style id="wy-eb-css">
+.wy-ebox{position:fixed;right:22px;bottom:138px;z-index:121;display:flex;flex-direction:column-reverse;gap:8px;align-items:flex-end;}
+.wy-eb{display:none;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#5b4a34,#392d1e);padding:8px 15px;border-radius:22px;text-decoration:none;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.30);border:1px solid rgba(184,134,11,.55);opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.wy-eb.show{display:inline-flex;}
+.wy-eb:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.wy-eb-ic{display:flex;align-items:center;color:#ecc978;flex:0 0 auto;}
+.wy-eb-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;min-width:0;}
+.wy-eb-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.wy-eb-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:210px;}
+@media(max-width:900px){.wy-ebox{right:14px;bottom:128px;}.wy-eb-l2{font-size:12px;max-width:150px;}}
+</style>
 </head>
 <body>
 <a id="top" style="position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;"></a>
@@ -566,8 +561,7 @@ a{color:inherit;text-decoration:none;}
 </main>
 <a class="wy-vbtn" id="wyVideoBtn" rel="noopener" target="_blank" title="觀看本品影音講解">
 <span class="wy-vico">▶</span><span class="wy-vlines"><span class="wy-vl1"></span><span class="wy-vl2"></span></span></a>
-<a class="wy-ebtn" id="wyEssayBtn" href="https://weiwen0925.github.io/medium-import-36.html" rel="noopener" target="_blank" title="延伸導讀 · 第36篇：三解脫門的實修、記憶與運用">
-<span class="wy-eico"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6C10.4 5.3 8.1 4.8 4.4 4.8v12.6c3.7 0 6 .5 7.6 1.8 1.6-1.3 3.9-1.8 7.6-1.8V4.8C15.9 4.8 13.6 5.3 12 6.6z"/><path d="M12 6.6V19.2"/></svg></span><span class="wy-elines"><span class="wy-el1">延伸導讀 · 第 36 篇</span><span class="wy-el2">三解脫門 · 實修運用</span></span></a>
+
 <button aria-label="回到頂部" id="backTop">↑</button>
 <div class="read-progress" id="readProgress">
 <span class="rp-label" data-wytext="nu+cjM/6genWkNbT"></span>
@@ -632,11 +626,9 @@ else{window.addEventListener('scroll',function(){var dh=document.documentElement
 /* ===== 影音資料 ===== */
 var WY_VIDEOS=[{"url": "https://youtu.be/QUiwmmLPxJY", "cn": "一", "sb": "三三昧義"}, {"url": "https://youtu.be/3P-XkwZsYd8", "cn": "二", "sb": "三解脫門"}, {"url": "https://youtu.be/MGuHwaKekw4", "cn": "三", "sb": "三三昧品"}, {"url": "https://youtu.be/ztZsWD8leBI", "cn": "四", "sb": "般若真空"}, {"url": "https://youtu.be/-XdR3WPmeTQ", "cn": "五", "sb": "三昧四禪"}, {"url": "https://youtu.be/Wilu8PFHWoc", "cn": "六", "sb": "四無量義"}, {"url": "https://youtu.be/_No3y0I3Lp0", "cn": "七", "sb": "慈心義"}, {"url": "https://youtu.be/WW90zPXI4MA", "cn": "八", "sb": "慈悲喜捨"}, {"url": "https://youtu.be/ns5sU0zL5GI", "cn": "九", "sb": "空中度生"}, {"url": "https://youtu.be/HXhO1m4kHxQ", "cn": "十", "sb": "四無色定"}, {"url": "https://youtu.be/ZLpc802DJGo", "cn": "十一", "sb": "大乘無色"}];
 var wyVBtn=document.getElementById('wyVideoBtn');
-var wyEBtn=document.getElementById('wyEssayBtn');/*WY-ESSAY36-BTN*/
 var wyVL1=wyVBtn?wyVBtn.querySelector('.wy-vl1'):null;
 var wyVL2=wyVBtn?wyVBtn.querySelector('.wy-vl2'):null;
 function updateVideo(idx){
-  if(wyEBtn)wyEBtn.classList.toggle('show',idx===2);/*WY-ESSAY36-BTN 僅品3(三三昧品)顯示*/
   if(!wyVBtn)return;
   if(idx>=0&&WY_VIDEOS[idx]){
     wyVBtn.href=WY_VIDEOS[idx].url;
@@ -770,5 +762,49 @@ document.getElementById('sbToggle').addEventListener('click',function(){
   });
 })();
 </script>
+<!--WY-EBTN:BEGIN-->
+<div class="wy-ebox"><a class="wy-eb" data-anchor="chapter-2-3-1" href="https://weiwen0925.github.io/medium-import-35.html" rel="noopener" target="_blank" title="延伸導讀 · 第 35 篇：拆光了零件，還有「車子」嗎？——用車、樂高、球隊，把龍樹最燒腦的「整體與部分」講到你會心一笑"><span class="wy-eb-ic"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6C10.4 5.3 8.1 4.8 4.4 4.8v12.6c3.7 0 6 .5 7.6 1.8 1.6-1.3 3.9-1.8 7.6-1.8V4.8C15.9 4.8 13.6 5.3 12 6.6z"/><path d="M12 6.6V19.2"/></svg></span><span class="wy-eb-ls"><span class="wy-eb-l1">延伸導讀 · 第 35 篇</span><span class="wy-eb-l2">拆光了零件，還有「車子」嗎？——用車、樂高、球隊，把龍樹最燒腦的「整體與部分」講到你會心一笑</span></span></a><a class="wy-eb" data-anchor="chapter-3-5-1" href="https://weiwen0925.github.io/medium-import-36.html" rel="noopener" target="_blank" title="延伸導讀 · 第 36 篇：十六觀行記不住？別背——把它收成三個問題：三解脫門，一把隨身的「破執羅盤」"><span class="wy-eb-ic"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6C10.4 5.3 8.1 4.8 4.4 4.8v12.6c3.7 0 6 .5 7.6 1.8 1.6-1.3 3.9-1.8 7.6-1.8V4.8C15.9 4.8 13.6 5.3 12 6.6z"/><path d="M12 6.6V19.2"/></svg></span><span class="wy-eb-ls"><span class="wy-eb-l1">延伸導讀 · 第 36 篇</span><span class="wy-eb-l2">十六觀行記不住？別背——把它收成三個問題：三解脫門，一把隨身的「破執羅盤」</span></span></a></div>
+<script id="wy-eb-js">(function(){
+var FR=[].slice.call(document.querySelectorAll('iframe.ch-frame'));
+var BT=[].slice.call(document.querySelectorAll('.wy-eb'));
+if(!FR.length||!BT.length)return;
+function markers(doc){
+  var byId=[].slice.call(doc.querySelectorAll('[id]')).filter(function(e){return /^chapter-\d+-\d+-\d+$/.test(e.id);});
+  if(byId.length)return byId;
+  return [].slice.call(doc.querySelectorAll('[data-anchor]'));
+}
+function resolve(b){
+  if(b._r&&b._r.el&&b._r.el.isConnected)return b._r;
+  b._r=null;var anc=b.getAttribute('data-anchor');
+  for(var i=0;i<FR.length;i++){
+    var f=FR[i],doc;try{doc=f.contentDocument||f.contentWindow.document;}catch(e){continue;}
+    if(!doc)continue;
+    var el=doc.getElementById(anc)||doc.querySelector('[data-anchor="'+anc+'"]');
+    if(!el)continue;
+    var mk=markers(doc),idx=mk.indexOf(el),nxt=null;
+    if(idx>=0){nxt=mk[idx+1]||null;}
+    else{for(var k=0;k<mk.length;k++){if(el.compareDocumentPosition(mk[k])&Node.DOCUMENT_POSITION_FOLLOWING){nxt=mk[k];break;}}}
+    b._r={f:f,el:el,nxt:nxt};return b._r;
+  }
+  return null;
+}
+function top(f,el){return window.scrollY+f.getBoundingClientRect().top+el.getBoundingClientRect().top;}
+function upd(){
+  var y=window.scrollY+window.innerHeight*0.30;
+  for(var i=0;i<BT.length;i++){
+    var b=BT[i],r=resolve(b);
+    if(!r){b.classList.remove('show');continue;}
+    var s=top(r.f,r.el);
+    var e=(r.nxt&&r.nxt.isConnected)?top(r.f,r.nxt):(window.scrollY+r.f.getBoundingClientRect().bottom);
+    b.classList.toggle('show',y>=s&&y<e);
+  }
+}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});
+window.addEventListener('resize',onS);
+var c=0,iv=setInterval(function(){upd();if(++c>100)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-EBTN:END-->
 </body>
 </html>
