@@ -1331,5 +1331,59 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-SDT3:END-->
+<!--WY-SDT4:BEGIN-->
+<style id="wy-sd4-css">
+.sd4-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.sd4-fabbox.show{display:block;}
+.sd4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.sd4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.sd4-ic{font-size:15px;line-height:1;color:#ecc978;}
+.sd4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.sd4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.sd4-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.sd4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.sd4-modal.open{display:flex;}
+.sd4-card{position:relative;background:#fbf7ee;max-width:880px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.sd4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.sd4-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.sd4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.sd4-close:hover{background:#e3d5b8;}
+.sd4-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.sd4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.sd4-tbl th,.sd4-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.sd4-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.sd4-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.sd4-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.sd4-tbl b{color:#8b2500;}
+.sd4-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.sd4-note b{color:#8b2500;}
+@media(max-width:900px){.sd4-fabbox{right:14px;}.sd4-tbl{font-size:11.5px;}.sd4-card{padding:26px 14px 16px;}}
+</style>
+<div class="sd4-fabbox" id="sd4Box"><button class="sd4-btn" id="sd4Btn" type="button" aria-label="開啟般若真空全景總表"><span class="sd4-ic">▦</span><span class="sd4-ls"><span class="sd4-l1">本品 · 般若真空</span><span class="sd4-l2">全景總表 · 二空·三門</span></span></button></div><div class="sd4-modal" id="sd4Modal" role="dialog" aria-modal="true" aria-label="般若真空全景總表"><div class="sd4-card"><button class="sd4-close" id="sd4Close" type="button" aria-label="關閉">×</button><h3>般若真空（第四品）· 全景總表</h3><p class="sub">卷二十・第四品｜眾生空與法空・中觀反轉・藥不作病・三解脫門連環解毒・三門一法</p><table class="sd4-tbl"><caption>一、全品十章結構地圖 ── 般若真空·三解脫門實相論</caption><thead><tr><th>章</th><th>提問</th><th>要點</th></tr></thead><tbody><tr><td>章1 · 二空緣起</td><td>空有幾種？</td><td><b>眾生空</b>（破我主體）＋<b>法空</b>（破法自相）——「諸法自相空」為核心命題</td></tr><tr><td>章2 · 中觀反轉</td><td>法空豈非壞了因果？</td><td>反證：<b>唯有法空方成立</b>罪福·因果·凡夫成聖（若法實有自性則無可壞·無生滅·無罪福）</td></tr><tr><td>章3 · 藥不作病</td><td>空有副作用嗎？</td><td>空是斷愛除見之<b>藥</b>；心著空相即生<b>狂慧慢心</b>，藥反成病（見有空，諸佛不化）</td></tr><tr><td>章4 · 原典釋讀</td><td>—</td><td>卷二十第四品原典逐段·論主開示與問答辯難</td></tr><tr><td>章5 · 三門連環</td><td>三門何關係？</td><td><b>連環解毒劑</b>：空破有見·無相破取空相·無作滅戲論；摩訶衍中<b>本是一法</b></td></tr><tr><td>章6–8 · 三門逐開</td><td>三門各破什麼、卡在哪？</td><td>空門(破有見·卡取空相)→無相門(不取相·卡生戲論)→無作門(滅三毒·不求三界生身)</td></tr><tr><td>章9 · 三門一法</td><td>一次到位還是循序？</td><td><b>直入</b>(利根從空門)與<b>對治</b>(鈍根循三門)·一鑰開三鎖終歸一城·心智除錯</td></tr><tr><td>章10 · 總攝</td><td>如何收束？</td><td>記憶掛鉤·偈頌「<b>戲論滅盡，是名涅槃</b>」</td></tr></tbody></table><table class="sd4-tbl"><caption>二、二空與中觀反轉 ── 本品核心論辯</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>眾生空</td><td>破「<b>我</b>」這個主體的實在性</td></tr><tr><td>法空</td><td>破「<b>法</b>」自相的實在性——諸法自相空（更深一重）</td></tr><tr><td>凡夫之難</td><td>法空則無生滅→無罪福→何用學道？</td></tr><tr><td>中觀反轉</td><td><b>有法空故有罪福！</b>若法實有自性則無可壞（性名不作法、不待因緣）；唯無自性才可轉、可修、可成聖</td></tr></tbody></table><table class="sd4-tbl"><caption>三、三解脫門 ── 連環解毒劑（一法三名）</caption><thead><tr><th>門</th><th>對治</th><th>觀行 · 卡關轉向</th></tr></thead><tbody><tr><td>空門 Empty</td><td>破「有見」</td><td>觀諸法空；卡關：取空相 → 轉無相</td></tr><tr><td>無相門 Signless</td><td>破「取空相」</td><td>於空中不取相·不貼標籤；卡關：無相生戲論 → 轉無作</td></tr><tr><td>無作門 Wishless</td><td>滅「戲論造作」</td><td>身口意無所作·滅三毒·不求三界生身；戲論滅盡是名涅槃</td></tr><tr><td>三門一法</td><td>一鑰開三鎖</td><td>摩訶衍中本是一法（如白光經稜鏡分三，終歸一城）；利根直入·鈍根對治</td></tr></tbody></table><p class="sd4-note"><b>中觀反轉</b>：凡夫難「法空則無罪福，何用學道」；龍樹反證——<b>正因為法空（無自性），罪福因果與凡夫成聖才可能</b>；若法實有自性則堅固不可壞、無生無滅，反而一切修證無從談起。<br><b>藥不作病</b>：空是斷愛除見的藥，<b>不是可執取的實有</b>；一旦「見有空」把空當實體，即生狂慧慢心，連諸佛也不能化——藥反成病。<br><b>三門一法</b>：空(破有見)·無相(破取空相)·無作(滅戲論)本是一法，如一鑰開三鎖、終歸涅槃一城；利根空門直入、鈍根循三門對治。承本品之後，般若將由「空的<b>見地</b>」開展為「空的<b>行持</b>」（六度中道）。深入白話解說見系列導讀相關篇章。</p></div></div>
+<script id="wy-sd4-js">(function(){
+var CH=document.querySelectorAll('section.chapter');
+var BTN=document.getElementById('sd4Btn'),BOX=document.getElementById('sd4Box'),MODAL=document.getElementById('sd4Modal');
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL='#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt',_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector('.wy-ebox');
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=='none'&&st.visibility!=='hidden')base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+'px';
+}
+function upd(){place();BOX.classList.toggle('show',curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+BTN.addEventListener('click',function(){MODAL.classList.add('open');});
+MODAL.addEventListener('click',function(e){if(e.target===MODAL||e.target.id==='sd4Close')MODAL.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')MODAL.classList.remove('open');});
+var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
+if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
+})();</script>
+<!--WY-SDT4:END-->
 </body>
 </html>
