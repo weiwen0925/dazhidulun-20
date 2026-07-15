@@ -1926,5 +1926,56 @@ var c=0,iv=setInterval(function(){upd();if(++c>60)clearInterval(iv);},300);
 if(document.readyState!=='loading')upd();else document.addEventListener('DOMContentLoaded',upd);
 })();</script>
 <!--WY-EBTN:END-->
+<!--WY-BH20P1:BEGIN-->
+<style id="wy-bh20p1-css">
+.bh20p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh20p1-fabbox.show{display:block;}
+.bh20p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh20p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh20p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh20p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh20p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh20p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh20p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh20p1-modal.open{display:flex;}
+.bh20p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh20p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh20p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh20p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh20p1-close:hover{background:#dde2e6;}
+.bh20p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh20p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh20p1-tbl th,.bh20p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh20p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh20p1-tbl thead th:nth-child(1){width:32%;}.bh20p1-tbl thead th:nth-child(2){width:41%;}.bh20p1-tbl thead th:nth-child(3){width:27%;}
+.bh20p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh20p1-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh20p1-guan{background:#eef2f5;color:#37505f;}
+.bh20p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh20p1-tbl tbody tr:nth-child(even) td.bh20p1-guan{background:#e8eef2;}
+.bh20p1-tbl tbody tr:nth-child(even) td.bh20p1-qa{background:#e7ecdb;}
+.bh20p1-tbl b{color:#8b2500;}
+.bh20p1-guan b{color:#2f6b5a;}
+.bh20p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh20p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh20p1-fabbox{right:14px;}.bh20p1-tbl{font-size:11px;}.bh20p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh20p1-fabbox" id="bh20p1Box"><button class="bh20p1-btn" id="bh20p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh20p1-ic">譯</span><span class="bh20p1-ls"><span class="bh20p1-l1">本品 · 原文·白話·中觀</span><span class="bh20p1-l2">白話翻譯表</span></span></button></div><div class="bh20p1-modal" id="bh20p1Modal" role="dialog" aria-modal="true"><div class="bh20p1-card"><button class="bh20p1-close" id="bh20p1Close" type="button" aria-label="關閉">×</button><h3>卷二十 · 第1品 白話翻譯表（修證地圖）</h3><p class="sub">大智度論卷二十·釋初品中三三昧義第三十二（修證地圖）· 原文↔白話↔中觀概念 逐段對照</p><table class="bh20p1-tbl"><caption>修證地圖 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh20p1-src">「空三昧、無相三昧、無作三昧，四禪、四無量心、四無色定，八背捨、八勝處、九次第定、十一切處。」</td><td>經文說：「空三昧、無相三昧、無作三昧，以及四禪、四無量心、四無色定，八背捨、八勝處、九次第定、十一切處。」</td><td class="bh20p1-guan"><b>三門與八助法並舉的定調</b>——經文將三解脫門（空、無相、無作）與四禪等八種修證法門並列而說，為全品鋪陳「道與到門」的結構張本：三十七道品是趣向涅槃之道，此處所列則是輔助行者心地柔軟、順利入三解脫門的助緣，二者相輔相成，缺一不可。</td></tr><tr><td class="bh20p1-qa">問曰：何以故次三十七品後，說八種法？</td><td>提問說：為什麼在說完三十七道品之後，接著又要說這八種法呢？</td><td class="bh20p1-guan"><b>次第安立的必然性詰問</b>——此問直指經文編排次第的用意：三十七品既已完備趣向涅槃之道，為何還需另立八種助法？逼出下文「道與到門」的結構性回答。</td></tr><tr><td class="bh20p1-qa">答曰：三十七品是趣涅槃道，行是道已，得到涅槃城。涅槃城有三門，所謂空、無相、無作。已說道，次應說到處門；四禪等是助開門法。</td><td>回答說：三十七道品是趣向涅槃的道路，走完這條道路之後，就能到達涅槃城。涅槃城有三個門，也就是空門、無相門、無作門。既然已經說完了道路，接下來自然應當說明到達城門的方法；四禪等法門，就是幫助打開這三扇門的助緣。</td><td class="bh20p1-guan"><b>道·到·門三階模型</b>——此答建立一個清晰的修證地圖：三十七品是「道」（行走的路徑），三解脫門是「門」（到達涅槃城後真正開啟解脫的關口），四禪等八法則是「助開門法」（讓門得以順利開啟的輔助工具）；三者次第分明、缺一不可，說明修行並非單一法門即可竟其功，而是道、門、助緣三重具足的整體工程。</td></tr><tr><td class="bh20p1-src">復次，三十七品是上妙法，欲界心散亂，行者依何地、何方便得？當依色界、無色界諸禪定。於四無量心、八背捨、八勝處、九次第定、十一切處中，試心知得柔軟自在隨意不？譬如御者試馬，曲折隨意，然後入陣。十一切處亦如是，觀取少許青色，視一切物皆能使青；一切黃、一切赤、一切白皆如是。復次，於八勝處緣中自在。初、二背捨，觀身不淨；第三背捨，觀身還使淨。四無量心：慈觀眾生皆樂，悲觀眾生皆苦，喜觀眾生皆喜；捨是三心，但觀眾生無有憎愛。</td><td>再者，三十七道品是極為殊勝微妙的法門，但欲界眾生的心念散亂浮動，行者要依憑什麼樣的境地、用什麼樣的方便才能證得呢？這時就應當依憑色界、無色界的種種禪定。在四無量心、八背捨、八勝處、九次第定、十一切處這些修法當中，正是用來測試自己的心是否已經柔軟自在、能夠隨意運轉。就好比馭馬的人先試探馬匹，讓牠能夠曲折自如、隨心所欲地轉動，然後才牽牠上陣作戰。十一切處的修習也是同樣的道理：觀想少許青色，練習到能把眼前一切物都觀想成青色；黃色、赤色、白色也都是同樣的練法。再者，在八勝處的所緣境界中也要練到自在無礙。八背捨當中，第一、第二背捨是觀想身體不淨；第三背捨則是再把身體觀回清淨。四無量心方面：慈心是觀想一切眾生都得到安樂，悲心是觀想一切眾生都在受苦，喜心是觀想一切眾生因得樂而歡喜；捨心則是捨去這三種心的偏執，只是平等地觀想眾生，不生憎愛分別。</td><td class="bh20p1-guan"><b>禪定為心柔軟度的試金石</b>——此段以「御者試馬」為喻，說明四禪等八法的真正作用不在於境界本身有多殊勝，而在於藉由反覆練習青黃赤白等所緣，測試並鍛鍊心念是否已達柔軟自在、隨意運轉的程度；心若不柔軟，縱有三十七品的正道，也難以真實趣入三解脫門，這正呼應「道」須配合「調心方便」才能落實的中道修證觀。</td></tr><tr><td class="bh20p1-src">復次，有二種觀：一者、得解觀，二者、實觀。實觀者，是三十七品。以實觀難得故，次第說得解觀。得解觀中心柔軟，易得實觀，用實觀得入三涅槃門。</td><td>再者，觀行有兩種：第一種是「得解觀」，第二種是「實觀」。所謂實觀，指的就是三十七道品的修習。由於實觀不容易直接證得，所以才依次第先說得解觀。在得解觀當中，心念會逐漸柔軟，因而比較容易證得實觀；再運用實觀的力量，就能證入三解脫門，趣向涅槃。</td><td class="bh20p1-guan"><b>得解觀為方便·實觀為究竟</b>——此段點出四禪等八法（得解觀）與三十七品（實觀）之間並非平行對立的兩套法門，而是方便與究竟的次第關係：得解觀先柔軟其心，為實觀鋪路，實觀既成，方能真正契入三解脫門；這正說明八種法之所以要「次三十七品後」而說，是修證地圖上不可省略的過渡階梯，並非重複贅設。</td></tr></tbody></table><p class="bh20p1-note">大智度論卷二十第1品「修證地圖」原文·白話·中觀對照。三十七品趣涅槃道·三解脫門為到處門、四禪等八法為助開門法、御者試馬柔軟心地喻、得解觀與實觀次第</p></div></div>
+<script id="wy-bh20p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh20p1Btn"),BOX=document.getElementById("bh20p1Box"),MODAL=document.getElementById("bh20p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("sd1Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh20p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH20P1:END-->
 </body>
 </html>
