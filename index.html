@@ -2436,5 +2436,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH20P10:END-->
+<!--WY-BH20P11:BEGIN-->
+<style id="wy-bh20p11-css">
+.bh20p11-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh20p11-fabbox.show{display:block;}
+.bh20p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh20p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh20p11-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh20p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh20p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh20p11-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh20p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh20p11-modal.open{display:flex;}
+.bh20p11-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh20p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh20p11-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh20p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh20p11-close:hover{background:#dde2e6;}
+.bh20p11-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh20p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh20p11-tbl th,.bh20p11-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh20p11-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh20p11-tbl thead th:nth-child(1){width:32%;}.bh20p11-tbl thead th:nth-child(2){width:41%;}.bh20p11-tbl thead th:nth-child(3){width:27%;}
+.bh20p11-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh20p11-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh20p11-guan{background:#eef2f5;color:#37505f;}
+.bh20p11-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh20p11-tbl tbody tr:nth-child(even) td.bh20p11-guan{background:#e8eef2;}
+.bh20p11-tbl tbody tr:nth-child(even) td.bh20p11-qa{background:#e7ecdb;}
+.bh20p11-tbl b{color:#8b2500;}
+.bh20p11-guan b{color:#2f6b5a;}
+.bh20p11-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh20p11-note b{color:#8b2500;}
+@media(max-width:900px){.bh20p11-fabbox{right:14px;}.bh20p11-tbl{font-size:11px;}.bh20p11-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh20p11-fabbox" id="bh20p11Box"><button class="bh20p11-btn" id="bh20p11Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh20p11-ic">譯</span><span class="bh20p11-ls"><span class="bh20p11-l1">本品 · 原文·白話·中觀</span><span class="bh20p11-l2">白話翻譯表</span></span></button></div><div class="bh20p11-modal" id="bh20p11Modal" role="dialog" aria-modal="true"><div class="bh20p11-card"><button class="bh20p11-close" id="bh20p11Close" type="button" aria-label="關閉">×</button><h3>卷二十 · 第11品 白話翻譯表（大乘四無色定）</h3><p class="sub">大智度論卷二十·大乘四無色定·摩訶衍中四無色定實相義 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh20p11-tbl"><caption>第11品 白話翻譯表 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh20p11-qa">問曰：摩訶衍中四無色云何？答曰：與諸法實相共智慧行，是摩訶衍中四無色。</td><td>有人問：大乘裡所說的「四無色」是什麼樣的內容？回答說：與諸法實相共同運行的智慧，就是大乘裡所說的四無色。</td><td class="bh20p11-guan"><b>定慧不二 · 大乘四無色的定義</b>——小乘的四無色（虛空處、識處、無所有處、非有想非無想處）著重禪定本身的深淺次第；大乘的四無色則把座標整個翻轉：真正的關鍵不在定有多深，而在這份定境是否與「諸法實相」的智慧同時運行。缺了慧觀，再深的定也只是精緻的沉睡。</td></tr><tr><td class="bh20p11-qa">問曰：何等是諸法實相？答曰：諸法自性空。</td><td>有人問：那麼所謂的「諸法實相」，到底是什麼？回答說：一切法都是自性空的。</td><td class="bh20p11-guan"><b>自性空 · 全品的總綱</b>——「自性空」是檢驗一切問難的唯一標準：一切法都沒有獨立自存、恆常不變的本體。第一輪定調「定慧同行」，第二輪立刻逼出「慧」的具體內容——自性空，為下文一切辯證立下裁判的準繩。</td></tr><tr><td class="bh20p11-qa">問曰：色法和合分別因緣故空，此無色中云何空？</td><td>有人問：物質性的色法，是因為眾緣和合、可以分析拆解才是空的；那麼這無色（沒有形體）的四無色定，又憑什麼說它是空的呢？</td><td class="bh20p11-guan"><b>唯物解構的盲點 · 挑戰者的邏輯前提</b>——挑戰者的潛台詞是：空性「依賴」於可拆解。色法（物質）可見可觸、眾緣和合而成，分割即散，故空；無色法（精神）既無形無相，似乎就脫離了「可分解故空」的邏輯，於是打上一個問號。這一問，其實是把「空」誤解為「依賴拆解形體」，於是在放下物質之後，悄悄抓住了一個「精神實體」不放。</td></tr><tr><td class="bh20p11-qa">答曰：色是眼見、耳聞麁事能令空，何況不可見、無有對、不覺苦樂而不空？復次，色法分別乃至微塵皆散滅歸空；是心心數法，在日月、時節、須臾頃，乃至一念中不可得。</td><td>回答說：色法是眼睛看得見、耳朵聽得到的粗顯之物，尚且能被照破歸於空；何況那些看不見、沒有對礙、連苦樂都覺受不到的細微之法，又怎麼可能反而不空呢？再者，色法可以透過分析，一路拆解到最微細的塵粒而終歸消散歸空；而心與心所這些精神現象，即使只用一天、一個時節、一剎那，乃至短短一念的時間去推求，也同樣了不可得。</td><td class="bh20p11-guan"><b>舉粗明細與雙重解構</b>——論主的回應分兩刀：第一刀「舉粗明細」——連眼見耳聞、堅實可觸的粗重色法都能被照破歸空，何況那不可見、無對礙、連苦樂都覺受不到的微細無色法，怎麼可能反而不空？第二刀揭示「雙重解構」的完整方法：色法從空間下手，分割至微塵而散滅歸空；心法（心心數法）則從時間下手，分割至一念剎那而不可得。空間與時間，是解構一切「實有」執著的兩把利刃。</td></tr><tr><td class="bh20p11-src">是名四無色定義。如是等種種，略說四無色。</td><td>以上就是四無色的定義。像這樣種種的道理，這裡只是簡略地說一說四無色（真正的義理遠不止於此）。</td><td class="bh20p11-guan"><b>語言的盡頭，當下的開始</b>——一個「略」字意味深長：語言只能到達這裡，真正的實相不在文字裡，也不在任何巧妙的圖表裡，而在行者每一個「當下」的觀照中。龍樹以「空間微塵皆散滅，時間一念不可得」總攝全品：粗重色法尚歸空，細微心念豈能常；照見五蘊，徹底清涼。</td></tr></tbody></table><p class="bh20p11-note">大智度論卷二十第11品「大乘四無色定」原文·白話·中觀對照。定慧不二的大乘四無色定義、諸法實相即自性空、唯物解構的盲點與挑戰、舉粗明細與空間時間雙重解構（微塵散滅/一念不可得）、語言的盡頭當下的開始</p></div></div>
+<script id="wy-bh20p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh20p11Btn"),BOX=document.getElementById("bh20p11Box"),MODAL=document.getElementById("bh20p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("sd11Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh20p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH20P11:END-->
 </body>
 </html>
