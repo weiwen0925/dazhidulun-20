@@ -2079,5 +2079,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH20P3:END-->
+<!--WY-BH20P4:BEGIN-->
+<style id="wy-bh20p4-css">
+.bh20p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh20p4-fabbox.show{display:block;}
+.bh20p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh20p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh20p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh20p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh20p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh20p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh20p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh20p4-modal.open{display:flex;}
+.bh20p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh20p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh20p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh20p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh20p4-close:hover{background:#dde2e6;}
+.bh20p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh20p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh20p4-tbl th,.bh20p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh20p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh20p4-tbl thead th:nth-child(1){width:32%;}.bh20p4-tbl thead th:nth-child(2){width:41%;}.bh20p4-tbl thead th:nth-child(3){width:27%;}
+.bh20p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh20p4-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh20p4-guan{background:#eef2f5;color:#37505f;}
+.bh20p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh20p4-tbl tbody tr:nth-child(even) td.bh20p4-guan{background:#e8eef2;}
+.bh20p4-tbl tbody tr:nth-child(even) td.bh20p4-qa{background:#e7ecdb;}
+.bh20p4-tbl b{color:#8b2500;}
+.bh20p4-guan b{color:#2f6b5a;}
+.bh20p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh20p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh20p4-fabbox{right:14px;}.bh20p4-tbl{font-size:11px;}.bh20p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh20p4-fabbox" id="bh20p4Box"><button class="bh20p4-btn" id="bh20p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh20p4-ic">譯</span><span class="bh20p4-ls"><span class="bh20p4-l1">本品 · 原文·白話·中觀</span><span class="bh20p4-l2">白話翻譯表</span></span></button></div><div class="bh20p4-modal" id="bh20p4Modal" role="dialog" aria-modal="true"><div class="bh20p4-card"><button class="bh20p4-close" id="bh20p4Close" type="button" aria-label="關閉">×</button><h3>卷二十 · 第4品 白話翻譯表（般若真空）</h3><p class="sub">大智度論卷二十·般若真空·三解脫門實相論 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh20p4-tbl"><caption>般若真空 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh20p4-src">復次，有二種空義，觀一切法空，所謂眾生空、法空。眾生空，如上說。法空者，諸法自相空。如佛告須菩提：「色，色相空；受、想、行、識，識相空。」</td><td>再者，觀察一切法空，有兩種空義，也就是眾生空與法空。眾生空的道理，如同前面所說。所謂法空，是說諸法本身的自相就是空的。就像佛陀告訴須菩提說的：「色法，它的色相是空的；受、想、行、識，它們各自的相也都是空的。」</td><td class="bh20p4-guan"><b>眾生空與法空的雙軌區分</b>——此段標舉大乘空觀的兩層次第：眾生空破除「我」的執著（前品已詳述），法空則更進一步，直探色受想行識五蘊本身「自相」亦不可得；佛陀親自對須菩提宣說「色相空、識相空」，正是法空教理最直接的經證依據，也是本品「般若真空」論述展開的起點。</td></tr><tr><td class="bh20p4-qa">問曰：眾生空，法不空，是可信；法自相空，是不可信。何以故？若法自相空，則無生無滅；無生無滅故，無罪無福；無罪無福故，何用學道？</td><td>提問說：眾生空、而法不空，這個道理還可以相信；但如果說法本身的自相也是空的，這就難以令人相信了。這是為什麼呢？因為如果法的自相是空的，那就沒有生、也沒有滅；既然無生無滅，就沒有罪、也沒有福；既然沒有罪福，那又何必修學佛道呢？</td><td class="bh20p4-guan"><b>法空恐招「壞因果」之難</b>——此問代表對法空教理最常見、也最尖銳的質疑：若法空成立，恐怕連善惡因果、罪福業報都要一併被空掉，修道也就失去意義；這正是後文必須嚴加辯破的關鍵詰難，逼顯「空」與「因果」如何並行不悖的中觀核心課題。</td></tr><tr><td class="bh20p4-qa">答曰：有法空故有罪福，若無法空，不應有罪福。何以故？若諸法實有自性，則無可壞。性相不從因緣生，若從因緣生，便是作法；若法性是作法，則可破。若言法性可作可破，是事不然！性名不作法，不待因緣有。諸法自性有，自性有則無生者，性先有故。若無生則無滅，生滅無故無罪福；無罪福故，何用學道？若眾生有真性者，則無能害、無能利，自性定故。如是等人，則不知恩義，破業果報。</td><td>回答說：正因為有法空的道理，才會有罪福的存在；如果沒有法空，反而不應該有罪福。這是為什麼呢？因為如果諸法真的有固定不變的自性，那就沒有什麼可以被破壞。（真正的）自性本不是從因緣所生的；如果是從因緣所生，那就成了「造作而成的法」；而如果法的自性是造作而成的，那它就可以被破壞。如果硬要說法性是可以被造作、也可以被破壞的，這道理是說不通的！因為所謂「性」，本來就是不待因緣、非造作而有的東西。如果堅持說諸法真的有固定的自性，那麼有了固定自性，就不可能有「生」，因為那個自性早已先天存在了。既然無生，也就無滅；沒有生滅，就沒有罪福可言；既然沒有罪福，那又何必修學佛道呢？如果眾生真的有一個固定不變的真實自性，那就沒有誰能傷害誰、也沒有誰能利益誰了，因為一切早已被自性所固定。這樣主張的人，其實是不懂得知恩圖報的道理，反而是在破壞業因果報的法則。</td><td class="bh20p4-guan"><b>以子之矛攻子之盾——執「有自性」才真正壞因果</b>——這段回答是全品最精彩的辯論翻轉：提問者以為「法空」才會壞因果，論主卻反過來指出，恰恰是「執著諸法有固定自性」才會真正壞掉因果——因為若法有不變自性，就不可能有生有滅，沒有生滅也就沒有罪福可言，甚至連知恩報恩、利害相關都成了空談；唯有「法空」（無固定自性、可隨因緣生滅變化），罪福因果才有安立的空間。這正是龍樹「以有空義故，一切法得成」的中觀根本立場——空非壞法，而是成就一切法（包括因果）的必要條件。</td></tr><tr><td class="bh20p4-src">法空中亦無法空相，汝得法空，心著故，而生是難。是法空，諸佛以憐愍心，為斷愛結、除邪見故說。復次，諸法實相能滅諸苦，是諸聖人真實行處。若是法空有性者，說一切法空時，云何亦自空？若無法空性，汝何所難？以是二空，能觀諸法空，心得離諸法，知世間虛誑如幻。</td><td>而且，在法空的道理當中，也沒有一個叫做「法空」的固定相狀可得。你之所以提出這樣的詰難，是因為你的心對「法空」這個概念產生了執著。這個法空的道理，是諸佛出於憐憫眾生的慈悲心，為了斷除眾生的愛結、去除邪見才宣說的。再者，諸法的真實相能夠滅除一切苦惱，這是諸位聖者親身實踐、真實體證的境界。如果說「法空」本身也有一個固定的自性，那麼當說「一切法空」的時候，這個「空」豈不是也要把自己空掉嗎？如果法空根本沒有固定的自性可得，那你又哪裡有什麼好詰難的呢？運用眾生空與法空這兩種空觀，就能夠觀照一切諸法皆空，使心得以遠離對諸法的執著，明白世間的一切原來就像虛妄、如幻一般不真實。</td><td class="bh20p4-guan"><b>空亦復空——法空本身也不可執取為實有</b>——此段預示全論反覆強調的「空亦復空」原則：法空只是諸佛為對治眾生愛結邪見而施設的方便說，其自身並非另一個可供執取的實有法相；若誤以為「空」是一個固定存在的東西，那麼「一切法空」這句話本身也應當自我否定（空亦自空），可見「法空」的正確運用方式是徹底破執而不留一絲執著的痕跡，這正是二空（眾生空、法空）觀行最終導向「心得離諸法、知世間如幻」的解脫效驗。</td></tr><tr><td class="bh20p4-src">如是觀空，若取是諸法空相，從是因緣生憍慢等諸結使，言「我能知諸法實相」，是時應學無相門，以滅取空相故。若於無相中生戲論，欲分別有所作，著是無相；是時復自思惟：「我為謬錯，諸法空無相中云何得相、取相作戲論？是時應隨空、無相行，身口意不應有所作，應觀無作相，滅三毒，不應起身口意業，不應求三界中生身。」如是思惟時，還入無作解脫門。</td><td>像這樣觀照空性的時候，如果反而執取了「諸法皆空」這個相狀，因而由此因緣生起憍慢等種種煩惱結使，說「我能夠了知諸法的真實相」，這時就應當進一步修學無相門，用來滅除對「空相」的執取。如果在修無相的過程中又生起了戲論，想要分別造作些什麼，執著在這個「無相」之上，這時就應當再次自我反省：「我實在是弄錯了，在諸法本空、本無相的境界當中，怎麼還會有相可得、還會執取相狀而生戲論呢？這時應當隨順空、無相而修行，身、口、意都不應該再有所造作，應當觀照『無作相』，滅除貪、瞋、癡三毒，不應該再生起身、口、意的種種業行，也不應該再求生於三界之中受生。」像這樣思惟的時候，就趣入了無作解脫門。</td><td class="bh20p4-guan"><b>三門遞進——從執空到破相到無作的層層對治</b>——此段清楚展示空、無相、無作三解脫門並非平行並列，而是層層深入、遞進對治的修證歷程：先觀空以破除對「有」的執著，但若又執著於「空相」本身（生起憍慢、以為已知實相），便需以無相門對治這層更微細的執著；若無相又被拿來當作分別戲論的對象，則須進一步以無作門收攝身口意，不再造作、不再求生三界；三門環環相扣，正說明中觀修證是一條不斷自我校正、不容許在任何一處停滯執取的動態歷程。</td></tr><tr><td class="bh20p4-src">是三解脫門，摩訶衍中是一法，以行因緣故，說有三種：觀諸法空是名「空」；於空中不可取相，是時空轉名「無相」；無相中不應有所作為三界生，是時無相轉名「無作」。</td><td>這三解脫門，在大乘（摩訶衍）的教理當中其實是同一個法，只是因為修行次第因緣的不同，才分別說有三種名稱：觀照諸法皆空，這時稱為「空」；在空之中不可再執取任何相狀，這時「空」就轉稱為「無相」；在無相之中不應該再為了求生三界而有所造作，這時「無相」就轉稱為「無作」。</td><td class="bh20p4-guan"><b>三門本是一法——摩訶衍視角下的三名一體</b>——此段從大乘（摩訶衍）的高度統攝前文分述的三門，指出空、無相、無作並非三個各自獨立的法，而是同一觀行在不同修證階段所呈現的不同面貌：空轉為無相、無相轉為無作，正是同一「諸法實相」隨修行深化而次第轉名，這與聲聞法將三昧、解脫門分別安立的角度略有不同，展現大乘般若「三即是一，一即是三」的圓融視野。</td></tr><tr><td class="bh20p4-src">譬如城有三門，一人身不得一時從三門入，若入則從一門。諸法實相是涅槃城，城有三門：空、無相、無作。若人入空門，不得是空，亦不取相，是人直入，事辦故，不須二門。若入是空門，取相得是空，於是人不名為門，通塗更塞。若除空相，是時從無相門入。若於無相相心著、生戲論，是時除取無相相，入無作門。</td><td>這就好比一座城池開有三道城門，一個人不可能同時從三道門一起進入，如果要進城，一定只能從其中一道門進去。諸法實相就是涅槃城，這座城也有三道門：空門、無相門、無作門。如果有人從空門進入，既不執取這個「空」，也不執取任何相狀，這個人就是直接進入，事情已經辦成，不需要再經過另外兩道門。但如果有人進了空門之後，反而執取了這個「空」相，那麼對這個人而言，這道門就不能算是真正的門了，通往涅槃的道路反而被自己堵塞住了。這時就必須除去對空相的執著，改從無相門進入。如果對「無相」這個相狀又生起了心念的執著、生出戲論，這時就要再除去對「無相相」的執取，改從無作門進入。</td><td class="bh20p4-guan"><b>三門一城喻——修證路徑的因人而異與殊途同歸</b>——此段以「城有三門，一人只能從一門入」為喻，說明空、無相、無作三門雖然名相不同，最終指向的都是同一座「涅槃城」（諸法實相）；根器銳利者從空門直入即可事辦，不假二門；根器稍鈍、於空生執者，則須轉由無相門對治，乃至再轉入無作門；三門因人根性、執著層次不同而次第施設，卻同歸一城，這正是佛法「方便多門、歸元無二」精神在解脫門安立上的具體展現。</td></tr></tbody></table><p class="bh20p4-note">大智度論卷二十第4品「般若真空」原文·白話·中觀對照。二空（眾生空法空）辨析、法空不壞因果的辯論翻轉、空亦復空、三門遞進對治、摩訶衍三門一法、城有三門喻</p></div></div>
+<script id="wy-bh20p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh20p4Btn"),BOX=document.getElementById("bh20p4Box"),MODAL=document.getElementById("bh20p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("sd4Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh20p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH20P4:END-->
 </body>
 </html>
