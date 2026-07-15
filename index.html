@@ -2181,5 +2181,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH20P5:END-->
+<!--WY-BH20P6:BEGIN-->
+<style id="wy-bh20p6-css">
+.bh20p6-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh20p6-fabbox.show{display:block;}
+.bh20p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh20p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh20p6-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh20p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh20p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh20p6-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh20p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh20p6-modal.open{display:flex;}
+.bh20p6-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh20p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh20p6-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh20p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh20p6-close:hover{background:#dde2e6;}
+.bh20p6-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh20p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh20p6-tbl th,.bh20p6-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh20p6-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh20p6-tbl thead th:nth-child(1){width:32%;}.bh20p6-tbl thead th:nth-child(2){width:41%;}.bh20p6-tbl thead th:nth-child(3){width:27%;}
+.bh20p6-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh20p6-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh20p6-guan{background:#eef2f5;color:#37505f;}
+.bh20p6-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh20p6-tbl tbody tr:nth-child(even) td.bh20p6-guan{background:#e8eef2;}
+.bh20p6-tbl tbody tr:nth-child(even) td.bh20p6-qa{background:#e7ecdb;}
+.bh20p6-tbl b{color:#8b2500;}
+.bh20p6-guan b{color:#2f6b5a;}
+.bh20p6-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh20p6-note b{color:#8b2500;}
+@media(max-width:900px){.bh20p6-fabbox{right:14px;}.bh20p6-tbl{font-size:11px;}.bh20p6-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh20p6-fabbox" id="bh20p6Box"><button class="bh20p6-btn" id="bh20p6Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh20p6-ic">譯</span><span class="bh20p6-ls"><span class="bh20p6-l1">本品 · 原文·白話·中觀</span><span class="bh20p6-l2">白話翻譯表</span></span></button></div><div class="bh20p6-modal" id="bh20p6Modal" role="dialog" aria-modal="true"><div class="bh20p6-card"><button class="bh20p6-close" id="bh20p6Close" type="button" aria-label="關閉">×</button><h3>卷二十 · 第6品 白話翻譯表（四無量心）</h3><p class="sub">大智度論卷二十·釋初品中四無量義第三十三 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh20p6-tbl"><caption>四無量心 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共13段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh20p6-qa">問曰：四禪中已有四無量心乃至十一切處，今何以故別說？</td><td>提問說：在四禪的修法當中，其實已經含攝了四無量心，乃至八背捨、八勝處、九次第定、十一切處等等，那麼現在為什麼還要另外分別解說呢？</td><td class="bh20p6-guan"><b>根本定已具足·何須另立分別法門之問</b>——此問直指「根本定」與「分別法門」之間的關係張力：既然四禪（色界根本禪定）本身已經涵蓋四無量心等種種功德，另外再細分並詳加解說，是否顯得重複多餘？逼出下文「囊中寶物」之喻的深刻回答。</td></tr><tr><td class="bh20p6-qa">答曰：雖四禪中皆有是法，若不別說名字則不知其功德；譬如囊中寶物，不開出則人不知。</td><td>回答說：雖然四禪之中本來就含有這些法，但如果不另外分別說出它們各自的名稱，人們就無法知道它們各自獨特的功德作用；這就好比袋子裡裝著珍寶，如果不把它打開拿出來讓人看見，別人也不會知道裡面究竟藏著什麼寶物。</td><td class="bh20p6-guan"><b>囊中寶物喻——分別施設是為彰顯而非疊床架屋</b>——此喻精準回應了前一問的疑慮：四禪就像一個裝滿珍寶的袋子，四無量心等法門雖已內含其中，但若不逐一取出命名、分別解說，行者便無從辨識、無從運用其各自的功德；可見分別法門的施設，並非重複贅設，而是讓本已具足的功德得以彰顯、便於行者掌握運用的必要教學手段。</td></tr><tr><td class="bh20p6-src">若欲得大福德者，為說「四無量心」；患厭色如在牢獄，為說「四無色定」；於緣中不能得自在、隨意觀所緣，為說「八勝處」；若有遮道，不得通達，為說「八背捨」；心不調柔，不能從禪起次第入禪，為說「九次第定」；不能得一切緣遍照、隨意得解，為說「十一切處」。</td><td>如果有人想要獲得廣大的福德，佛就為他宣說「四無量心」；如果有人厭患色身、覺得色身如同身處牢獄一般，佛就為他宣說「四無色定」；如果有人在所緣境當中無法得自在、無法隨意觀想所緣，佛就為他宣說「八勝處」；如果有人修行之中有障礙阻擋，無法通達，佛就為他宣說「八背捨」；如果有人心念不調柔，無法從一個禪定次第進入下一個禪定，佛就為他宣說「九次第定」；如果有人無法讓一切所緣境都能遍照、無法隨意獲得理解，佛就為他宣說「十一切處」。</td><td class="bh20p6-guan"><b>應病與藥——六種法門各自對治的功能定位</b>——此段逐一列出四無量心、四無色定、八勝處、八背捨、九次第定、十一切處這六種法門各自對治的具體問題（求福德、厭色身、不能自在觀緣、有遮道、心不調柔、不能遍照隨解），完整回答了「為何要分別說」的問題：每一法門都是針對修行過程中某個特定卡點所開的專屬藥方，正是「應病與藥」教學智慧的具體展開，也呼應開篇「囊中寶物」之喻——每件寶物都有其特定用途，不開展說明便無從對症取用。</td></tr><tr><td class="bh20p6-src">四無量心者，慈、悲、喜、捨。</td><td>所謂四無量心，就是慈、悲、喜、捨這四種心。</td><td class="bh20p6-guan"><b>四無量心總標——全品主題正式登場</b>——此句是全品核心主題「四無量心」的總標提示，簡潔標舉慈、悲、喜、捨四心之名，為下文逐一定義每一心的具體內涵拉開序幕。</td></tr><tr><td class="bh20p6-src">「慈」名愛念眾生，常求安隱樂事以饒益之；「悲」名愍念眾生受五道中種種身苦、心苦；「喜」名欲令眾生從樂得歡喜；「捨」名捨三種心，但念眾生不憎不愛。</td><td>「慈」，是指愛護思念眾生，經常希望為眾生尋求安穩快樂的事情來饒益他們；「悲」，是指憐憫思念眾生在五道輪迴之中所承受的種種身苦、心苦；「喜」，是指希望眾生能夠因為得到快樂而心生歡喜；「捨」，是指捨去前面慈、悲、喜這三種心（的偏執），只是平等地思念眾生，既不憎恨、也不貪愛。</td><td class="bh20p6-guan"><b>四心各自定義——慈悲喜捨的精確界說</b>——此段為四無量心逐一下定義，慈側重「與樂」、悲側重「拔苦」、喜側重「隨喜眾生得樂」、捨則是超越前三心可能夾帶的偏執（如慈可能夾雜貪愛、悲可能夾雜憂惱），達到不憎不愛的平等心境；四心層層遞進，構成一套完整而周延的利他心理修證體系。</td></tr><tr><td class="bh20p6-src">修慈心，為除眾生中瞋覺故；修悲心，為除眾生中惱覺故；修喜心，為除不悅樂故；修捨心，為除眾生中愛憎故。</td><td>修習慈心，是為了除去對眾生生起的瞋恨覺想；修習悲心，是為了除去對眾生生起的惱害覺想；修習喜心，是為了除去心中不悅樂的情緒；修習捨心，是為了除去對眾生的貪愛與憎恨。</td><td class="bh20p6-guan"><b>四心對治——各自針對性的煩惱處方</b>——延續前段對四心的定義，此段進一步說明每一心各自對治的煩惱：慈治瞋、悲治惱、喜治不悅樂、捨治愛憎，四心與四種煩惱一一對應，構成精確的「對治表」，展現佛法修心並非籠統地「修善」，而是針對具體煩惱類型精準設計相應的對治法門。</td></tr><tr><td class="bh20p6-src">若念十方眾生令得樂時，心數法中生法，名為慈；是慈相應受、想、行、識眾，是法起身業、口業及心不相應諸行，是法和合，皆名為慈。</td><td>當憶念十方一切眾生、希望使他們都能獲得快樂的時候，在心所法當中所生起的這個法，就稱為「慈」；與這個慈心相應的受、想、行、識諸蘊，以及由此慈心所引發的身業、口業和心不相應諸行，這一切法和合起來，都可以稱之為「慈」。</td><td class="bh20p6-guan"><b>慈的結構分析——非單一心所而是和合運作</b>——此段以阿毘曇式的精細分析，說明「慈」並非單一孤立的心理狀態，而是由核心的慈心所、與之相應的受想行識諸蘊，以及由此引發的身口業與心不相應行等眾多成分和合構成的複合運作，這正呼應品3「王臣營從喻」的原理——慈心如王，其相應蘊與身口業如隨行的大臣營從，共同和合才成就完整的「慈」。</td></tr><tr><td class="bh20p6-src">名為慈故，是法生，以慈為主，是故慈得名。</td><td>因為以「慈」為名，所以這整套和合而生的法才被稱為慈；正因為是以慈心作為主導，所以才用「慈」來命名。</td><td class="bh20p6-guan"><b>以思（主導心所）得名——命名法則的哲學意涵</b>——此句點出一個重要的命名原則：整套和合運作的法之所以被稱為「慈」，並非因為其中每一個成分都叫做慈，而是因為慈心在其中居於主導地位，故以其為代表命名；這與下一句「思最有力故得業名」的原理相通，說明佛法中複合法的命名慣例，往往是取其中最具主導性的成分為代表，而非要求每個組成部分都名實相符。</td></tr><tr><td class="bh20p6-src">譬如一切心心數法雖皆是後世業因緣，而但思得名，於作業中，思最有力故。</td><td>這就好比一切心與心所法，雖然全部都是形成後世業報的因緣，但唯獨用「思」這個心所來命名業，這是因為在造作業行的過程中，「思」的作用力是最強大有力的。</td><td class="bh20p6-guan"><b>思業喻——以主導因素代表全體的命名慣例</b>——此段以「思」在業因緣中雖非唯一成分、卻因作用力最強而獨得「業」之名為喻，類比說明「慈」的命名原理同出一轍：一組法縱然由眾多成分和合而成，仍可依其中最具主導力的成分來命名整體，這是佛教法相學中一個具有普遍解釋力的命名法則，也再次印證「諸法和合、以主為名」並非慈心獨有的特例。</td></tr><tr><td class="bh20p6-src">悲、喜、捨亦如是。</td><td>悲、喜、捨這三心的道理，也是同樣如此（可依同樣的結構分析與命名原則類推）。</td><td class="bh20p6-guan"><b>類推悲喜捨——省文見義的論書慣例</b>——此句同樣是論書典型的簡省寫法，表示前面針對「慈」所作的結構分析（和合構成）與命名原理（以主導心所得名），同樣適用於悲、喜、捨三心，不必逐一重複論述，體現論典行文簡潔而邏輯一貫的特色。</td></tr><tr><td class="bh20p6-src">是慈在色界。或有漏，或無漏。或可斷，或不可斷。亦在根本禪中，亦禪中間。三根相應，除苦根、憂根。如是等，《阿毘曇》分別說。</td><td>這個慈心是屬於色界的。它或者是有漏的，或者是無漏的。或者是可以被斷除的，或者是不可斷除的。它既存在於根本禪之中，也存在於禪中間（未至定與根本禪之間的中間定）。它與樂根、喜根、捨根這三根相應，但排除苦根與憂根。像這樣種種細節，在《阿毘曇》的相關章節中都有詳細的分別解說。</td><td class="bh20p6-guan"><b>屬性分別——慈心在阿毘曇法相體系中的定位</b>——此段以阿毘曇特有的精密分類方式，為「慈」在界（色界）、漏無漏、可斷不可斷、所依定地（根本禪／禪中間）、相應根（三根相應、除苦憂二根）等多個維度上一一定位，展現部派佛教法相分析體系嚴謹周延的特色，也為下一句「有漏無漏之判準」的追問埋下伏筆——既然慈心可通有漏無漏，那麼判別的標準究竟何在？</td></tr><tr><td class="bh20p6-src">取眾生相故有漏；取相已，入諸法實相故無漏。</td><td>如果執取「眾生」這個相狀去修慈，這樣的慈心就是有漏的；如果執取了相狀之後，能夠進一步契入諸法的真實相，這樣的慈心就是無漏的。</td><td class="bh20p6-guan"><b>有漏無漏的判準——從方便工具躍升至究竟見地的轉折</b>——此句是全品最具中觀深意的關鍵句：判別慈心有漏、無漏的標準，不在於是否修慈這件事本身，而在於是否仍執著「眾生」這個相狀——若停留在「有眾生可念、可與樂」的相狀執取，便是有漏；若能透過修慈進一步契入「諸法實相」（無我、無自性），則同一個慈心便轉為無漏；這正說明慈悲與空性智慧並非兩條平行的修行路線，而是可以在同一個「慈」的修行中，由方便工具層層深化為究竟見地。</td></tr><tr><td class="bh20p6-src">以是故，《無盡意菩薩問》中說慈有三種：一者、眾生緣，二者、法緣，三者、無緣。</td><td>正因為如此，《無盡意菩薩問》這部經典中才說慈心有三種：第一種是以眾生為所緣的慈（眾生緣慈），第二種是以法為所緣的慈（法緣慈），第三種是無所緣的慈（無緣慈）。</td><td class="bh20p6-guan"><b>三種慈——由淺入深的修證位階</b>——此段引《無盡意菩薩問》經證，將前一句「有漏無漏之判準」進一步開展為三個具體位階：眾生緣慈（執取眾生相，凡夫二乘所修，屬有漏）、法緣慈（了知眾生但為五蘊假合，屬較深層次）、無緣慈（不住眾生相、不住法相，契入諸法實相，即諸佛菩薩的無緣大慈），三慈由淺入深，構成一條從「有所緣的方便慈悲」邁向「無所緣的究竟慈悲」的完整修證階梯，正是全品由「四無量心」導向「中觀邏輯」的關鍵匯歸點。</td></tr></tbody></table><p class="bh20p6-note">大智度論卷二十第6品「四無量心」原文·白話·中觀對照。囊中寶物喻·別說六法對治、四無量心總標與對治、慈之結構分析與思業喻、有漏無漏判準、無盡意菩薩問三種慈</p></div></div>
+<script id="wy-bh20p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh20p6Btn"),BOX=document.getElementById("bh20p6Box"),MODAL=document.getElementById("bh20p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("sd6Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh20p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH20P6:END-->
 </body>
 </html>
